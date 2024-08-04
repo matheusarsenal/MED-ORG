@@ -6,4 +6,6 @@
 
 
 
-ideilização da criação um aplicativo focado na area da saude
+ideilização da criação um aplicativo focado na area da saude com o objetivo de auxiliar tanto a população como os profissinais da saude.
+
+
