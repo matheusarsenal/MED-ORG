@@ -6,14 +6,28 @@
 
 # Escopo
 
-idealização e criação de um site-aplicativo para a area da saude com o objetivo de auxiliar tanto a população como os profissinais da saude.
+idealização e criação de um site e aplicativo para a area da saude com o objetivo auxilio e automatização,tanto para a população quanto para as unidades de saude e profissionais.
 
 
-# Objetivos e funcionalidades
+# objetivos
 
-O escopo do produto tem o intuito de automatizar ainda mais a area da saude com diferentes objetivos para a população e para a os profissinais.
+O escopo do produto tem o intuito de automatizar diferentes objetivos para a população e para a os profissinais.
 
-para a população o foco primario e para informação e acompanhamento,a funcionalidade principal e um mapa contendo as unidades de saude e apresentando as informaçãoes especificadas das unidades,como;
+para a população o foco primario e para informação e acompanhamento,a funcionalidade principal e um mapa contendo as unidades de saude e informaçãoes especificadas delas,como;
+
+
+
+
+
+
+
+
+# funcionalidades
+
+
+ com os objetivos de informatização e acompanhamento,a funcionalidade principal e um mapa contendo as unidades de saude e informaçãoes especificadas delas,como;
+
+- localização das unidades de saude via GPS.
 
 - serviços oferecidos(areas) pelo hospital.
 
