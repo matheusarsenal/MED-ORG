@@ -10,7 +10,7 @@
 criação de um site e aplicativo para a area da saude com o objetivo auxilio e automatização,tanto para a população quanto para as unidades de saude e profissionais.
 
 
-# objetivos
+# Objetivos
 
 O escopo do produto tem o intuito de automatizar diferentes objetivos para a população e para a os profissinais.
 
@@ -23,7 +23,7 @@ para a população o foco primario e para informação e acompanhamento,a funcio
 
 
 
-# funcionalidades
+# Funcionalidades
 
 
  com os objetivos de informatização e acompanhamento,a funcionalidade principal e um mapa contendo as unidades de saude e informaçãoes especificadas delas,como;
@@ -47,7 +47,7 @@ ainda ira conter algumas funcionalidades extras como:
 - agendamentos medicos.
 
 
-# integrantes 
+# Integrantes 
 
 - Matheus Fabiano Barbosa Aguiar
 
