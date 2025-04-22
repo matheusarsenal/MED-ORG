@@ -59,6 +59,7 @@ Para os profissionais da saude o escopo esta na automatização dos serviços,os
 
 # ⚙️Protótipo
 Link do protótipo:
+https://ai2.appinventor.mit.edu/#4644208094806016
 
 
 
