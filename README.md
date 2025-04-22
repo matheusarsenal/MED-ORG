@@ -27,7 +27,7 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 
 - Tirar senhas(guiche).
 
-* Além disso, no mapa, o usuário também poderá usar as seguites funcionalidades extras:
+### Além disso, no mapa, o usuário também poderá usar as seguites funcionalidades extras:
 
 - Baixar ou tirar prescriçãoes medicas de forma online, excluindo a necessidade do papel.
 
