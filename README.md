@@ -4,9 +4,10 @@
 ![med org new version](https://github.com/user-attachments/assets/c8dfc841-4206-4ea3-8bee-9a7e3ed112aa)
 
 
+
 # Escopo
 
-idealização e criação de um site e aplicativo para a area da saude com o objetivo auxilio e automatização,tanto para a população quanto para as unidades de saude e profissionais.
+criação de um site e aplicativo para a area da saude com o objetivo auxilio e automatização,tanto para a população quanto para as unidades de saude e profissionais.
 
 
 # objetivos
@@ -46,6 +47,23 @@ ainda ira conter algumas funcionalidades extras como:
 - agendamentos medicos.
 
 
+# integrantes 
+
+- Matheus Fabiano Barbosa Aguiar
+
+- Antonio Edson alves de Holanda Neto
+
+- Dacio Da Silva Melo Junior
+
+- Lucas Mourato Aureliano De Melo
+
+- Diogo Geovanni Da Silva Mendes
+
+- David Candido De Souza    
+
+
+
+#profissionais da saude
 
 para os profissionais da saude o escopo esta na automatização dos serviços,os medicos que utilizarem o sistema poderam utilizar as seguintes funcionalidades 
 
