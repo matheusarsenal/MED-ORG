@@ -34,7 +34,7 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 
 - Conversar diretamente com o medico de forma remota atraves do aplicativo para acompanhamento.
 
-- Agendar consultas com o médico especifico;
+- Agendar consultas com o médico especifico.
 
 
 # 🤝Integrantes 
@@ -52,15 +52,14 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 - David Cândido De Souza    
 
 
-
 # 👨‍⚕️Profissionais de Saúde
-
+Para os profissionais da saude o escopo esta na automatização dos serviços,os medicos que utilizarem o sistema poderam utilizar as seguintes funcionalidades.
 
 # ⚙️Protótipo
-link do protótipo:
+Link do protótipo:
 
 
-Para os profissionais da saude o escopo esta na automatização dos serviços,os medicos que utilizarem o sistema poderam utilizar as seguintes funcionalidades 
+
 
 
 
