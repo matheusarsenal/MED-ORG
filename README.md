@@ -10,16 +10,9 @@
 Criação de um site/aplicativo para a área da saúde com o objetivo de forneçer um serviço de auxilio e automatização de uma consulta médica, tanto para a população quanto para as unidades de saude e profissionais.
 
 
-# objetivos
+# Objetivos
 
-O escopo do produto tem o intuito de automatizar diferentes objetivos para a população e para a os profissinais.
-
-para a população o foco primario e para informação e acompanhamento,a funcionalidade principal e um mapa contendo as unidades de saude e informaçãoes especificadas delas,como;
-
-
-
-
-
+O escopo do produto tem o intuito de automatizar diferentes objetivos para a população e para a os profissinais. Para a população o foco primario é para informação e acompanhamento do sistema para uma consulta médica, facilitando o a busca e pesquisa sobre médicos especializados nas aréas necessarias para o paciente, já o médico pode utilizar nosso aplicativo como um repositorio com suas especializações, seus horarios disponiveis, hospitais em que trabalha, e a situação atual de seus clientes.
 
 
 
