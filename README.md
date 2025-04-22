@@ -7,7 +7,7 @@
 
 # Escopo
 
-criação de um site e aplicativo para a area da saude com o objetivo auxilio e automatização,tanto para a população quanto para as unidades de saude e profissionais.
+Criação de um site/aplicativo para a área da saúde com o objetivo de forneçer um serviço de auxilio e automatização de uma consulta médica, tanto para a população quanto para as unidades de saude e profissionais.
 
 
 # objetivos
