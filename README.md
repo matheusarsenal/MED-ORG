@@ -41,21 +41,21 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 
 - Matheus Fabiano Barbosa Aguiar
 
-- Antonio Edson alves de Holanda Neto
+- Antônio Edson Alves de Holanda Neto
 
-- Dacio Da Silva Melo Junior
+- Dácio Da Silva Melo Junior
 
 - Lucas Mourato Aureliano De Melo
 
 - Diogo Geovanni Da Silva Mendes
 
-- David Candido De Souza    
+- David Cândido De Souza    
 
 
 
 # 👨‍⚕️Profissionais de Saúde
 
-para os profissionais da saude o escopo esta na automatização dos serviços,os medicos que utilizarem o sistema poderam utilizar as seguintes funcionalidades 
+Para os profissionais da saude o escopo esta na automatização dos serviços,os medicos que utilizarem o sistema poderam utilizar as seguintes funcionalidades 
 
 
 
