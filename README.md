@@ -17,7 +17,7 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 
 
 # Funcionalidades
- * Com os objetivos de informatização e acompanhamento, a funcionalidade principal e um mapa contendo as unidades de saude e as seguites informações de cada:
+### Com os objetivos de informatização e acompanhamento, a funcionalidade principal e um mapa contendo as unidades de saude e as seguites informações de cada:
 
 - Localização das unidades de saude via GPS.
 
