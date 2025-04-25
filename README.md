@@ -49,36 +49,28 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 
 
 
-![Image](https://github.com/user-attachments/assets/bccde0ac-e5f6-45ae-84ea-d16a6f191757)
+![Image](https://github.com/user-attachments/assets/586a1835-9dfd-4449-90e6-476603b6fd56) 
 
+![Image](https://github.com/user-attachments/assets/35292659-6e97-41e4-80e1-e5e5cdc53688)
 
+![Image](https://github.com/user-attachments/assets/c5c29170-8e83-4d51-85fd-d8ed12a0abd7)
 
+![Image](https://github.com/user-attachments/assets/6c472fd2-4533-4698-91f5-c46559f007cf)
 
-![Image](https://github.com/user-attachments/assets/8fc7390f-cf0b-44d7-8c2f-907ae258ff71)
+![Image](https://github.com/user-attachments/assets/4abf2d4d-e907-4702-898a-098cb9aa530e)
 
+![Image](https://github.com/user-attachments/assets/7f81cf4e-74bd-4e84-ada5-df1b7353029c)
 
-
-
-
-![Image](https://github.com/user-attachments/assets/0cb473e8-e4ef-4f82-b8eb-0bde51a9490e)
-
-
-![Image](https://github.com/user-attachments/assets/1bc0f86f-2fb6-40fe-b964-7603d43c6550)
-
-![Image](https://github.com/user-attachments/assets/7d8cdb8b-1796-4050-a055-a8b082abbf2a)
-
-
-![Image](https://github.com/user-attachments/assets/76d4b8f5-89f7-4d03-9d12-3ac3894610be)
+![Image](https://github.com/user-attachments/assets/346585e8-edd3-4e6f-9f26-85f722bda37d)
 
 
 
 
 
-![Image](https://github.com/user-attachments/assets/9d9f5351-7d95-4bc6-a433-1d0e9cd15014)
 
 
 
-![Image](https://github.com/user-attachments/assets/3e82277a-505b-4f46-8c55-d47318d8d763)
+
 
 
 # historias de usuario(jira)
