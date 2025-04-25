@@ -103,9 +103,9 @@ Para os profissionais da saúde o escopo esta na automatização dos serviços,o
 - Salomão Pernambucano Lima Galindo
 
 # ⚙️adicionais
-Link do protótipo:
-https://ai2.appinventor.mit.edu/#4644208094806016
-link do jira:
+## Link do protótipo:
+[![image](https://github.com/user-attachments/assets/b322dd7d-dd99-43dd-a27b-2e286a302027)](https://ai2.appinventor.mit.edu/#4644208094806016)
+## Link do jira:
 [![image](https://github.com/user-attachments/assets/e1bd292f-9d9f-41c5-bf57-12124c87dfaa)](https://unicap-team-foo2rsaj.atlassian.net/jira/software/projects/DP/boards/1)
 
 
