@@ -8,7 +8,7 @@
 
 # 📓Escopo
 
-Criação de um site/aplicativo para a área da saúde com o objetivo de forneçer um serviço de auxilio e automatização de uma consulta médica, tanto para a população quanto para as unidades de saude e profissionais.
+Criação de um site/aplicativo para a área da saúde com o objetivo de forneçer um serviço de auxilio de informação e automatização de uma consulta médica, tanto para a população quanto para as unidades de saude e profissionais.
 
 
 # 🎯Objetivos
@@ -28,13 +28,15 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 
 - Tirar senhas(guiche).
 
-### 📔Além disso, no mapa, o usuário também poderá usar as seguites funcionalidades extras:
+### 📔Além disso, o usuário também poderá usar as seguites funcionalidades extras:
 
 - Baixar ou tirar prescriçãoes medicas de forma online, excluindo a necessidade do papel.
 
 - Conversar diretamente com o medico de forma remota atraves do aplicativo para acompanhamento.
 
-- Agendar consultas com o médico especifico.
+- fazer Agendamentos de consultas com o médico especifico.
+
+  
 
 
 
@@ -94,7 +96,6 @@ Link do protótipo:
 https://ai2.appinventor.mit.edu/#4644208094806016
 link do jira:
 https://unicap-team-foo2rsaj.atlassian.net/jira/software/projects/DP/boards/1
-link do scremcast:
 
 
 
