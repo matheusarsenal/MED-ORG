@@ -45,6 +45,10 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 
 
 
+![Image](https://github.com/user-attachments/assets/8fc7390f-cf0b-44d7-8c2f-907ae258ff71)
+
+
+
 
 
 ![Image](https://github.com/user-attachments/assets/0cb473e8-e4ef-4f82-b8eb-0bde51a9490e)
