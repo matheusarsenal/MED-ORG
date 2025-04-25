@@ -96,7 +96,9 @@ Para os profissionais da saúde o escopo esta na automatização dos serviços,o
 
 - Diogo Geovanni Da Silva Mendes
 
-- David Cândido De Souza    
+- David Cândido De Souza
+
+- Salomão Pernambucano Lima Galindo
 
 # ⚙️adicionais
 Link do protótipo:
