@@ -106,7 +106,7 @@ Para os profissionais da saúde o escopo esta na automatização dos serviços,o
 Link do protótipo:
 https://ai2.appinventor.mit.edu/#4644208094806016
 link do jira:
-![image](https://unicap-team-foo2rsaj.atlassian.net/jira/software/projects/DP/boards/1)
+[![image](https://github.com/user-attachments/assets/e1bd292f-9d9f-41c5-bf57-12124c87dfaa)](https://unicap-team-foo2rsaj.atlassian.net/jira/software/projects/DP/boards/1)
 
 
 
