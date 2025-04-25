@@ -4,6 +4,10 @@
 ![med org new version](https://github.com/user-attachments/assets/c8dfc841-4206-4ea3-8bee-9a7e3ed112aa)
 
 
+# ods
+
+![Image](https://github.com/user-attachments/assets/db1224ff-5194-4bdd-a190-4941f18e0d48)
+
 
 
 # 📓Escopo
