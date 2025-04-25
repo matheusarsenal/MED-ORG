@@ -89,9 +89,12 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 # 👨‍⚕️Profissionais de Saúde
 Para os profissionais da saude o escopo esta na automatização dos serviços,os medicos que utilizarem o sistema poderam utilizar as seguintes funcionalidades.
 
-# ⚙️Protótipo
+# ⚙️adicionais
 Link do protótipo:
 https://ai2.appinventor.mit.edu/#4644208094806016
+link do jira:
+https://unicap-team-foo2rsaj.atlassian.net/jira/software/projects/DP/boards/1
+link do scremcast:
 
 
 
