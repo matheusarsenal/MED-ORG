@@ -86,6 +86,11 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 ![Image](https://github.com/user-attachments/assets/d1abc3a9-decf-4c6e-b5c9-1370c51a4cb9)
 
 
+
+# 👨‍⚕️Profissionais de Saúde
+Para os profissionais da saude o escopo esta na automatização dos serviços,os medicos que utilizarem o sistema poderam utilizar as seguintes funcionalidades.
+
+
 # 🤝Integrantes 
 
 - Matheus Fabiano Barbosa Aguiar
@@ -99,10 +104,6 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 - Diogo Geovanni Da Silva Mendes
 
 - David Cândido De Souza    
-
-
-# 👨‍⚕️Profissionais de Saúde
-Para os profissionais da saude o escopo esta na automatização dos serviços,os medicos que utilizarem o sistema poderam utilizar as seguintes funcionalidades.
 
 # ⚙️adicionais
 Link do protótipo:
