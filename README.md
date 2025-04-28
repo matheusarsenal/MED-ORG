@@ -82,9 +82,6 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 
 
 
-# 👨‍⚕️Profissionais de Saúde
-Para os profissionais da saúde o escopo esta na automatização dos serviços,os medicos que utilizarem o sistema poderam utilizar as seguintes funcionalidades.
-
 
 # 🤝Integrantes 
 
