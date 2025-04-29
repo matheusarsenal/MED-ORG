@@ -1,7 +1,8 @@
 # 🏥Med-org
  
-<div align= "center"
-![Image](https://github.com/user-attachments/assets/a2b93cbb-5829-4bce-82ad-44c179b11673)>
+<div align= "center">
+ 
+![Image](https://github.com/user-attachments/assets/a2b93cbb-5829-4bce-82ad-44c179b11673)
 
 
 # ODS
@@ -11,8 +12,7 @@
 
 
 
-
-
+<div align= "left">
 # 📓Escopo
 
 Criação de um site/aplicativo para a área da saúde com o objetivo de forneçer um serviço de auxilio de informação e automatização de uma consulta médica, tanto para a população quanto para as unidades de saude e profissionais.
@@ -50,10 +50,11 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 
 
  
-
-
-
+<div aliegn= "left">
+ 
 ![Image](https://github.com/user-attachments/assets/c5c29170-8e83-4d51-85fd-d8ed12a0abd7)
+
+- funcionalidade de logar no aplicativo 
 
 ![Image](https://github.com/user-attachments/assets/1f2e95a0-189a-4817-bae2-fdf48bc0aedb)
 
@@ -74,15 +75,13 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 
 
 
-
-
-# historias de usuario(jira)
+<div align="center">
+# historias de usuário(jira)
 
 ![Image](https://github.com/user-attachments/assets/5be2cac9-237b-4a2b-8293-ff792a8db45c)
 
 
-
-
+<div align="left">
 # 🤝Integrantes 
 
 - Matheus Fabiano Barbosa Aguiar
@@ -99,6 +98,10 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 
 - Salomão Pernambucano Lima Galindo
 
+  
+
+<div align="left">
+ 
 # ⚙️adicionais
 ## Link do protótipo:
 [![image](https://github.com/user-attachments/assets/dbcced9d-86c8-4ad1-9889-3563c3b3df97)](https://ai2.appinventor.mit.edu/#4644208094806016)
