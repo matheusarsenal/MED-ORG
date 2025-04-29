@@ -1,7 +1,7 @@
 # 🏥Med-org
  
 
-![med org new version](https://github.com/user-attachments/assets/c8dfc841-4206-4ea3-8bee-9a7e3ed112aa)
+![Image](https://github.com/user-attachments/assets/a2b93cbb-5829-4bce-82ad-44c179b11673)
 
 
 # ODS
