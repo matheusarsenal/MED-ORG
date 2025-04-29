@@ -82,6 +82,7 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 
 
 <div align="left">
+ 
 # 🤝Integrantes 
 
 - Matheus Fabiano Barbosa Aguiar
