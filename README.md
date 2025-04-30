@@ -109,7 +109,7 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 ## Link do protótipo:
 <div align="center">
  
-[![image=100x100](https://github.com/user-attachments/assets/dbcced9d-86c8-4ad1-9889-3563c3b3df97)](https://ai2.appinventor.mit.edu/#4644208094806016)
+<img src="https://github.com/user-attachments/assets/dbcced9d-86c8-4ad1-9889-3563c3b3df97" width="100" height="100">
 ## Link do jira:
 <div align="center">
  
