@@ -109,11 +109,12 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 ## Link do protótipo:
 <div align="center">
  
-<img src="https://github.com/user-attachments/assets/dbcced9d-86c8-4ad1-9889-3563c3b3df97" width="100" height="100">
+[<img src="https://github.com/user-attachments/assets/dbcced9d-86c8-4ad1-9889-3563c3b3df97" width="100" height="100">](https://ai2.appinventor.mit.edu/#4644208094806016)
+
 ## Link do jira:
 <div align="center">
  
-[![image](https://github.com/user-attachments/assets/e1bd292f-9d9f-41c5-bf57-12124c87dfaa)](https://unicap-team-foo2rsaj.atlassian.net/jira/software/projects/DP/boards/1)
+<img src="https://github.com/user-attachments/assets/e1bd292f-9d9f-41c5-bf57-12124c87dfaa" width="100" height="100>(https://unicap-team-foo2rsaj.atlassian.net/jira/software/projects/DP/boards/1)
 
 
 
