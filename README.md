@@ -2,7 +2,7 @@
  
 <div align= "center">
  
-![Image](https://github.com/user-attachments/assets/a2b93cbb-5829-4bce-82ad-44c179b11673)
+<img src="https://github.com/user-attachments/assets/a2b93cbb-5829-4bce-82ad-44c179b11673" width="100" height="100">
 
 
 # ODS
@@ -114,7 +114,7 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 ## Link do jira:
 <div align="center">
  
-<img src="https://github.com/user-attachments/assets/e1bd292f-9d9f-41c5-bf57-12124c87dfaa" width="100" height="100>(https://unicap-team-foo2rsaj.atlassian.net/jira/software/projects/DP/boards/1)
+[<img src="https://github.com/user-attachments/assets/e1bd292f-9d9f-41c5-bf57-12124c87dfaa" width="100" height="100>](https://unicap-team-foo2rsaj.atlassian.net/jira/software/projects/DP/boards/1)
 
 
 
