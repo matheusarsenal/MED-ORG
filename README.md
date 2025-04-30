@@ -2,7 +2,7 @@
  
 <div align= "center">
  
-<img src="https://github.com/user-attachments/assets/a2b93cbb-5829-4bce-82ad-44c179b11673" width="190" height="175">
+<img src="https://github.com/user-attachments/assets/a2b93cbb-5829-4bce-82ad-44c179b11673" width="175" height="140">
 
 
 # ODS
