@@ -54,15 +54,14 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
  
 ![Image](https://github.com/user-attachments/assets/c5c29170-8e83-4d51-85fd-d8ed12a0abd7)
 
-- funcionalidade de logar no aplicativo, atraves do email cadastrado e uma senha
+
 
 ![Image](https://github.com/user-attachments/assets/1f2e95a0-189a-4817-bae2-fdf48bc0aedb)
 
-- funcionalidade de poder rastrear os hospital nas renondezas do estado informando a cidade ou estado,e tambem acompanhada de poder usar a localização atual
+
 
 ![Image](https://github.com/user-attachments/assets/6c472fd2-4533-4698-91f5-c46559f007cf)
 
-- 
 
 ![Image](https://github.com/user-attachments/assets/4abf2d4d-e907-4702-898a-098cb9aa530e)
 
