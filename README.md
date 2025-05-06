@@ -73,17 +73,14 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 
 ![Image](https://github.com/user-attachments/assets/586a1835-9dfd-4449-90e6-476603b6fd56)
 
-
-
-
-
-
 <div align="center">
  
-# historias de usuário(jira)
+# Historias de Usuário(jira)
 
 ![Image](https://github.com/user-attachments/assets/5be2cac9-237b-4a2b-8293-ff792a8db45c)
 
+
+# Diagrama de Atividades
 
 <div align="left">
  
