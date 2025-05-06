@@ -79,7 +79,8 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 
 ![Image](https://github.com/user-attachments/assets/5be2cac9-237b-4a2b-8293-ff792a8db45c)
 
-
+<div align="left">
+ 
 # Diagrama de Atividades
 
 https://app.diagrams.net/#G14zJqllpdjw_fsRbqm58ENEzjXTNz4-ke#%7B%22pageId%22%3A%222tmNFl2CJkhRfFjX94A6%22%7D
