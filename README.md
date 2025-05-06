@@ -52,7 +52,7 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
  
 <div aliegn= "left">
  
-![Image](https://github.com/user-attachments/assets/c5c29170-8e83-4d51-85fd-d8ed12a0abd7)
+![Image](https://github.com/user-attachments/assets/d68246ad-58b5-47e1-9977-e84403d5259e)
 
 
 
