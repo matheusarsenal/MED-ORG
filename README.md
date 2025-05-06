@@ -82,6 +82,8 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 
 # Diagrama de Atividades
 
+https://app.diagrams.net/#G14zJqllpdjw_fsRbqm58ENEzjXTNz4-ke#%7B%22pageId%22%3A%222tmNFl2CJkhRfFjX94A6%22%7D
+
 <div align="left">
  
 # 🤝Integrantes 
