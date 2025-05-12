@@ -1,0 +1,23 @@
+.SupTec {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #505050c8;
+    max-width: 50%;
+    width: 400px;
+    margin-bottom: 20px;
+
+    & h1#titulo{
+        color: black
+        
+    } 
+}
