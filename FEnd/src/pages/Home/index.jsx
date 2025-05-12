@@ -1,4 +1,4 @@
-import './style.css'
+import '../style.css'
 import MedLogo from '../../assets/MedOrg.svg'
 
 function Home() {
