@@ -1,7 +1,7 @@
-import '../style.css';
-import { useState } from 'react';
+import React, { useState } from 'react';
+import { View, Text, TextInput, Button, StyleSheet, ScrollView } from 'react-native';
 
-export default function CadastroSecretario() {
+export default function CadastroSecretario({ navigation }) {
   const [formData, setFormData] = useState({
     nome: '',
     email: '',
@@ -14,119 +14,115 @@ export default function CadastroSecretario() {
     confirmarSenha: '',
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+  const handleChange = (key, value) => {
+    setFormData((prev) => ({ ...prev, [key]: value }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const senhaValida = /^(?=.*[A-Z])(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]).{6,}$/;
-
+  const handleSubmit = () => {
     if (formData.senha !== formData.confirmarSenha) {
-      alert('As senhas não coincidem!');
-      return;
-    }
-
-    if (!senhaValida.test(formData.senha)) {
-      alert('A senha deve conter ao menos uma letra maiúscula e um símbolo especial.');
+      alert('As senhas não coincidem.');
       return;
     }
 
     console.log('Cadastro de secretário enviado:', formData);
+    alert('Cadastro realizado com sucesso!');
+    navigation.goBack();
   };
 
   return (
-    <div className="telaCadastro">
-      <form onSubmit={handleSubmit}>
-        <h1>Cadastro de Secretário(a)</h1>
+    <ScrollView contentContainerStyle={styles.container}>
+      <Text style={styles.title}>Cadastro de Secretário</Text>
 
-        <input 
-            type="text" 
-            name="nome" 
-            placeholder="Nome" 
-            value={formData.nome} 
-            onChange={handleChange} 
-            required 
-        />
+      <TextInput
+        style={styles.input}
+        placeholder="Nome"
+        value={formData.nome}
+        onChangeText={(text) => handleChange('nome', text)}
+      />
 
-        <input 
-            type="email" 
-            name="email" 
-            placeholder="E-mail" 
-            value={formData.email} 
-            onChange={handleChange} 
-            required 
-        />
-        
-        <input 
-            type="tel" 
-            name="telefone" 
-            placeholder="Telefone" 
-            value={formData.telefone} 
-            onChange={handleChange} 
-            required 
-        />
-        
-        <input 
-            type="text" 
-            name="cpf" 
-            placeholder="CPF" 
-            value={formData.cpf} 
-            onChange={handleChange} 
-            required 
-        />
+      <TextInput
+        style={styles.input}
+        placeholder="E-mail"
+        value={formData.email}
+        keyboardType="email-address"
+        onChangeText={(text) => handleChange('email', text)}
+      />
 
-        <select 
-            name="sexo" 
-            value={formData.sexo} 
-            onChange={handleChange} 
-            required
-        >
-          <option value="">Selecione o sexo</option>
-          <option value="Masculino">Masculino</option>
-          <option value="Feminino">Feminino</option>
-          <option value="Outro">Outro</option>
-        </select>
+      <TextInput
+        style={styles.input}
+        placeholder="Telefone"
+        value={formData.telefone}
+        keyboardType="phone-pad"
+        onChangeText={(text) => handleChange('telefone', text)}
+      />
 
-        <input 
-            type="date" 
-            name="dataNascimento" 
-            value={formData.dataNascimento} 
-            onChange={handleChange} 
-            required 
-        />
+      <TextInput
+        style={styles.input}
+        placeholder="CPF"
+        value={formData.cpf}
+        onChangeText={(text) => handleChange('cpf', text)}
+      />
 
-        <input 
-            type="text" 
-            name="endereco" 
-            placeholder="Endereço" 
-            value={formData.endereco} 
-            onChange={handleChange} 
-            required 
-        />
+      <TextInput
+        style={styles.input}
+        placeholder="Sexo"
+        value={formData.sexo}
+        onChangeText={(text) => handleChange('sexo', text)}
+      />
 
-        <input 
-            type="password" 
-            name="senha" 
-            placeholder="Senha" 
-            value={formData.senha} 
-            onChange={handleChange} 
-            required 
-        />
+      <TextInput
+        style={styles.input}
+        placeholder="Data de Nascimento (DD/MM/AAAA)"
+        value={formData.dataNascimento}
+        onChangeText={(text) => handleChange('dataNascimento', text)}
+      />
 
-        <input 
-            type="password" 
-            name="confirmarSenha" 
-            placeholder="Confirmar Senha" 
-            value={formData.confirmarSenha} 
-            onChange={handleChange} 
-            required 
-        />
+      <TextInput
+        style={styles.input}
+        placeholder="Endereço"
+        value={formData.endereco}
+        onChangeText={(text) => handleChange('endereco', text)}
+      />
 
-        <button type="submit">Cadastrar</button>
-      </form>
-    </div>
+      <TextInput
+        style={styles.input}
+        placeholder="Senha"
+        secureTextEntry
+        value={formData.senha}
+        onChangeText={(text) => handleChange('senha', text)}
+      />
+
+      <TextInput
+        style={styles.input}
+        placeholder="Confirmar Senha"
+        secureTextEntry
+        value={formData.confirmarSenha}
+        onChangeText={(text) => handleChange('confirmarSenha', text)}
+      />
+
+      <Button title="Cadastrar" onPress={handleSubmit} />
+    </ScrollView>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    padding: 20,
+    backgroundColor: '#fff',
+    flexGrow: 1,
+  },
+  title: {
+    fontSize: 22,
+    fontWeight: 'bold',
+    color: '#388E3C',
+    marginBottom: 20,
+    textAlign: 'center',
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: '#ccc',
+    borderRadius: 8,
+    padding: 10,
+    marginBottom: 12,
+  },
+});

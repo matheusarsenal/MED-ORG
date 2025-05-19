@@ -3,26 +3,23 @@ import { View, Text, TouchableOpacity, StyleSheet, Alert } from 'react-native';
  
 export default function TelaEscolhaCadastro({ navigation }) {
   const navegarPara = (tipo) => {
-    Alert.alert(`Ir para cadastro de ${tipo}`);
+    navigation.navigate(`Ir para cadastro de ${tipo}`);
     // navigation.navigate(`Cadastro${tipo}`); 
   };
- 
+
   return (
-<View style={styles.container}>
-<Text style={styles.title}>Escolha o tipo de cadastro</Text>
- 
+    <View style={styles.container}>
+      <Text style={styles.title}>Escolha o tipo de cadastro</Text>
       <TouchableOpacity style={styles.button} onPress={() => navegarPara('Medico')}>
-<Text style={styles.buttonText}>Cadastro Médico</Text>
-</TouchableOpacity>
- 
+        <Text style={styles.buttonText}>Cadastro Médico</Text>
+      </TouchableOpacity>
       <TouchableOpacity style={styles.button} onPress={() => navegarPara('Paciente')}>
-<Text style={styles.buttonText}>Cadastro Paciente</Text>
-</TouchableOpacity>
- 
+        <Text style={styles.buttonText}>Cadastro Paciente</Text>
+      </TouchableOpacity>
       <TouchableOpacity style={styles.button} onPress={() => navegarPara('Secretario')}>
-<Text style={styles.buttonText}>Cadastro Secretário</Text>
-</TouchableOpacity>
-</View>
+        <Text style={styles.buttonText}>Cadastro Secretário</Text>
+      </TouchableOpacity>
+    </View>
   );
 }
  
