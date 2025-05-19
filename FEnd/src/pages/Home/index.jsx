@@ -1,6 +1,7 @@
 import '../style.css';
 import MedLogo from '../../assets/MedOrg.svg';
 
+
 function Home() {
   return (
     <div className="telaLogin">
@@ -24,6 +25,10 @@ function Home() {
         
         <button id="create" type="button">Criar Conta</button>
         <button id="enter" type="submit">Entrar</button>
+        <label>
+          <input id="keepc" type="checkbox"></input>
+          <p> Manter-me Conectado</p>
+        </label>
       </form>
     </div>
   );
