@@ -1,4 +1,8 @@
-return (
+import '../style.css';
+import MedLogo from '../../assets/MedOrg.svg';
+
+function Home() {
+  return (
     <div className="telaLogin">
       <form id="login">
         <img src={MedLogo} alt="MedOrg Logo" />
@@ -23,3 +27,6 @@ return (
       </form>
     </div>
   );
+}
+
+export default Home;
