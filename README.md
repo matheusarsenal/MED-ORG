@@ -79,7 +79,7 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
  
 # Historias de Usuário(jira)
 
-![Image](https://github.com/user-attachments/assets/5be2cac9-237b-4a2b-8293-ff792a8db45c)
+![image](https://github.com/user-attachments/assets/def95dfb-62b1-4842-a8de-5359345fb571)
 
 <div align="left">
  
