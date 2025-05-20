@@ -1,37 +1,120 @@
-import '../style.css';
-import MedLogo from '../../assets/MedOrg.svg';
+import React, { useState } from 'react';
+import {View, Text, TextInput, TouchableOpacity, Image, Switch, StyleSheet,} from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import MedLogo from '../../assets/MedOrg.png';
 
+export default function HomeScreen() {
+  const navigation = useNavigation();
+  const [email, setEmail] = useState('');
+  const [senha, setSenha] = useState('');
+  const [manterConectado, setManterConectado] = useState(false);
 
-function Home() {
   return (
-    <div className="telaLogin">
-      <form id="login">
-        <img src={MedLogo} alt="MedOrg Logo" />
-        <h1>Login</h1>
-        
-        <input 
-          type="email" 
-          name="email" 
-          placeholder="Digite seu email" 
-          required 
+    <View style={styles.container}>
+      <Image source={MedLogo} style={styles.logo} />
+      <Text style={styles.title}>Login</Text>
+
+      <TextInput
+        style={styles.input}
+        placeholder="Digite seu email"
+        value={email}
+        onChangeText={setEmail}
+        keyboardType="email-address"
+        autoCapitalize="none"
+      />
+
+      <TextInput
+        style={styles.input}
+        placeholder="Digite sua senha"
+        value={senha}
+        onChangeText={setSenha}
+        secureTextEntry
+      />
+
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => navigation.navigate('Escolha')}
+      >
+        <Text style={styles.buttonText}>Criar Conta</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity
+        style={[styles.button, styles.enterButton]}
+        onPress={() => {
+          // Lógica de login aqui...
+        }}
+      >
+        <Text style={styles.buttonText}>Entrar</Text>
+      </TouchableOpacity>
+
+      <View style={styles.switchContainer}>
+        <Switch
+          value={manterConectado}
+          onValueChange={setManterConectado}
         />
-        
-        <input 
-          type="password" 
-          name="senha" 
-          placeholder="Digite sua senha" 
-          required 
-        />
-        
-        <button id="create" type="button">Criar Conta</button>
-        <button id="enter" type="submit">Entrar</button>
-        <label>
-          <input id="keepc" type="checkbox"></input>
-          <p> Manter-me Conectado</p>
-        </label>
-      </form>
-    </div>
+        <Text style={styles.switchText}>Manter-me Conectado</Text>
+      </View>
+    </View>
   );
 }
 
-export default Home;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 20,
+  },
+
+  logo: {
+    width: 150,
+    height: 150,
+    resizeMode: 'contain',
+    marginBottom: 20,
+  },
+
+  title: {
+    fontSize: 32,
+    marginBottom: 20,
+    fontWeight: 'bold',
+  },
+
+  input: {
+    width: '100%',
+    borderWidth: 1,
+    borderColor: '#ccc',
+    padding: 10,
+    borderRadius: 8,
+    marginBottom: 15,
+  },
+
+  button: {
+    backgroundColor: '#007BFF',
+    paddingVertical: 12,
+    paddingHorizontal: 25,
+    borderRadius: 8,
+    marginBottom: 10,
+    width: '100%',
+    alignItems: 'center',
+  },
+
+  enterButton: {
+    backgroundColor: '#28A745',
+  },
+
+  buttonText: {
+    color: '#fff',
+    fontWeight: 'bold',
+  },
+
+  switchContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 10,
+  },
+
+  switchText: {
+    marginLeft: 10,
+  },
+});
