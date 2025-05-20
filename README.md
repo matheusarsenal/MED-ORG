@@ -108,6 +108,9 @@ https://app.diagrams.net/#G14zJqllpdjw_fsRbqm58ENEzjXTNz4-ke#%7B%22pageId%22%3A%
 Programar essa interface de cadastro em parceria foi uma experiência bastante produtiva e educativa, principalmente pois foi feita com uma boa divisão de tarefas e comunicação clara. 
 Antônio: "Realizei o desenvolvimento das 4 telas de cadastro ao lado da minha dupla david , a divisão do trabalho e do que cada um deveria fazer reduziu bastante o estresse que teríamos fazendo tudo individualemente , além disso aumentou a eficiência do desenvolvimento."
 
+
+![Image](https://github.com/user-attachments/assets/531904ae-e33a-4bb2-8815-5ba2eb92cd46)
+
  <div align="left">
 
 # 🐛Bug Tracker
