@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, Button, StyleSheet, ScrollView } from 'react-native';
+import './style.css';
+import { useNavigate } from 'react-router-dom';
 
-export default function CadastroSecretario({ navigation }) {
+
+export default function CadastroSecretario() {
   const [formData, setFormData] = useState({
     nome: '',
     email: '',
@@ -18,7 +20,8 @@ export default function CadastroSecretario({ navigation }) {
     setFormData((prev) => ({ ...prev, [key]: value }));
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     if (formData.senha !== formData.confirmarSenha) {
       alert('As senhas não coincidem.');
       return;
@@ -26,103 +29,87 @@ export default function CadastroSecretario({ navigation }) {
 
     console.log('Cadastro de secretário enviado:', formData);
     alert('Cadastro realizado com sucesso!');
-    navigation.goBack();
   };
 
   return (
-    <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.title}>Cadastro de Secretário</Text>
+    <div className="telaCadastro">
+      <form onSubmit={handleSubmit}>
+        <h1>Cadastro de Secretário</h1>
 
-      <TextInput
-        style={styles.input}
-        placeholder="Nome"
-        value={formData.nome}
-        onChangeText={(text) => handleChange('nome', text)}
-      />
+        <input
+          type="text"
+          placeholder="Nome"
+          value={formData.nome}
+          onChange={(e) => handleChange('nome', e.target.value)}
+          required
+        />
 
-      <TextInput
-        style={styles.input}
-        placeholder="E-mail"
-        value={formData.email}
-        keyboardType="email-address"
-        onChangeText={(text) => handleChange('email', text)}
-      />
+        <input
+          type="email"
+          placeholder="E-mail"
+          value={formData.email}
+          onChange={(e) => handleChange('email', e.target.value)}
+          required
+        />
 
-      <TextInput
-        style={styles.input}
-        placeholder="Telefone"
-        value={formData.telefone}
-        keyboardType="phone-pad"
-        onChangeText={(text) => handleChange('telefone', text)}
-      />
+        <input
+          type="tel"
+          placeholder="Telefone"
+          value={formData.telefone}
+          onChange={(e) => handleChange('telefone', e.target.value)}
+          required
+        />
 
-      <TextInput
-        style={styles.input}
-        placeholder="CPF"
-        value={formData.cpf}
-        onChangeText={(text) => handleChange('cpf', text)}
-      />
+        <input
+          type="text"
+          placeholder="CPF"
+          value={formData.cpf}
+          onChange={(e) => handleChange('cpf', e.target.value)}
+          required
+        />
 
-      <TextInput
-        style={styles.input}
-        placeholder="Sexo"
-        value={formData.sexo}
-        onChangeText={(text) => handleChange('sexo', text)}
-      />
+        <input
+          type="text"
+          placeholder="Sexo"
+          value={formData.sexo}
+          onChange={(e) => handleChange('sexo', e.target.value)}
+          required
+        />
 
-      <TextInput
-        style={styles.input}
-        placeholder="Data de Nascimento (DD/MM/AAAA)"
-        value={formData.dataNascimento}
-        onChangeText={(text) => handleChange('dataNascimento', text)}
-      />
+        <input
+          type="text"
+          placeholder="Data de Nascimento (DD/MM/AAAA)"
+          value={formData.dataNascimento}
+          onChange={(e) => handleChange('dataNascimento', e.target.value)}
+          required
+        />
 
-      <TextInput
-        style={styles.input}
-        placeholder="Endereço"
-        value={formData.endereco}
-        onChangeText={(text) => handleChange('endereco', text)}
-      />
+        <input
+          type="text"
+          placeholder="Endereço"
+          value={formData.endereco}
+          onChange={(e) => handleChange('endereco', e.target.value)}
+          required
+        />
 
-      <TextInput
-        style={styles.input}
-        placeholder="Senha"
-        secureTextEntry
-        value={formData.senha}
-        onChangeText={(text) => handleChange('senha', text)}
-      />
+        <input
+          type="password"
+          placeholder="Senha"
+          value={formData.senha}
+          onChange={(e) => handleChange('senha', e.target.value)}
+          required
+        />
 
-      <TextInput
-        style={styles.input}
-        placeholder="Confirmar Senha"
-        secureTextEntry
-        value={formData.confirmarSenha}
-        onChangeText={(text) => handleChange('confirmarSenha', text)}
-      />
+        <input
+          type="password"
+          placeholder="Confirmar Senha"
+          value={formData.confirmarSenha}
+          onChange={(e) => handleChange('confirmarSenha', e.target.value)}
+          required
+        />
 
-      <Button title="Cadastrar" onPress={handleSubmit} />
-    </ScrollView>
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    padding: 20,
-    backgroundColor: '#fff',
-    flexGrow: 1,
-  },
-  title: {
-    fontSize: 22,
-    fontWeight: 'bold',
-    color: '#388E3C',
-    marginBottom: 20,
-    textAlign: 'center',
-  },
-  input: {
-    borderWidth: 1,
-    borderColor: '#ccc',
-    borderRadius: 8,
-    padding: 10,
-    marginBottom: 12,
-  },
-});

@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, Button, StyleSheet, ScrollView, Alert } from 'react-native';
+import './style.css';
+import { useNavigate } from 'react-router-dom';
 
-export default function CadastroMedico({ navigation }) {
+
+export default function CadastroMedico() {
   const [formData, setFormData] = useState({
     nome: '',
     email: '',
@@ -13,64 +15,93 @@ export default function CadastroMedico({ navigation }) {
     confirmarSenha: '',
   });
 
-  const handleChange = (name, value) => {
-    setFormData(prev => ({ ...prev, [name]: value }));
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
     const senhaValida = /^(?=.*[A-Z])(?=.*[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]).{6,}$/;
 
     if (formData.senha !== formData.confirmarSenha) {
-      Alert.alert('Erro', 'As senhas não coincidem!');
+      alert('As senhas não coincidem!');
       return;
     }
 
     if (!senhaValida.test(formData.senha)) {
-      Alert.alert('Erro', 'A senha deve conter ao menos uma letra maiúscula e um símbolo especial.');
+      alert('A senha deve conter ao menos uma letra maiúscula e um símbolo especial.');
       return;
     }
 
     console.log('Cadastro médico enviado:', formData);
-    Alert.alert('Sucesso', 'Cadastro realizado com sucesso!');
+    alert('Cadastro realizado com sucesso!');
   };
 
   return (
-    <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.title}>Cadastro Médico</Text>
+    <div className="telaCadastro">
+      <h1>Cadastro Médico</h1>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="nome"
+          placeholder="Nome"
+          value={formData.nome}
+          onChange={handleChange}
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="E-mail"
+          value={formData.email}
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          name="sexo"
+          placeholder="Sexo"
+          value={formData.sexo}
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          name="especializacao"
+          placeholder="Especialização"
+          value={formData.especializacao}
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          name="crm"
+          placeholder="CRM"
+          value={formData.crm}
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          name="formacao"
+          placeholder="Formação"
+          value={formData.formacao}
+          onChange={handleChange}
+        />
+        <input
+          type="password"
+          name="senha"
+          placeholder="Senha"
+          value={formData.senha}
+          onChange={handleChange}
+        />
+        <input
+          type="password"
+          name="confirmarSenha"
+          placeholder="Confirmar Senha"
+          value={formData.confirmarSenha}
+          onChange={handleChange}
+        />
 
-      <TextInput placeholder="Nome" style={styles.input} value={formData.nome} onChangeText={text => handleChange('nome', text)} />
-      <TextInput placeholder="E-mail" style={styles.input} value={formData.email} onChangeText={text => handleChange('email', text)} keyboardType="email-address" />
-      <TextInput placeholder="Sexo" style={styles.input} value={formData.sexo} onChangeText={text => handleChange('sexo', text)} />
-      <TextInput placeholder="Especialização" style={styles.input} value={formData.especializacao} onChangeText={text => handleChange('especializacao', text)} />
-      <TextInput placeholder="CRM" style={styles.input} value={formData.crm} onChangeText={text => handleChange('crm', text)} />
-      <TextInput placeholder="Formação" style={styles.input} value={formData.formacao} onChangeText={text => handleChange('formacao', text)} />
-      <TextInput placeholder="Senha" style={styles.input} secureTextEntry value={formData.senha} onChangeText={text => handleChange('senha', text)} />
-      <TextInput placeholder="Confirmar Senha" style={styles.input} secureTextEntry value={formData.confirmarSenha} onChangeText={text => handleChange('confirmarSenha', text)} />
-
-      <Button title="Cadastrar" onPress={handleSubmit} />
-    </ScrollView>
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    padding: 20,
-    paddingBottom: 40,
-    backgroundColor: '#fff',
-    flexGrow: 1,
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 20,
-    textAlign: 'center',
-    color: '#1976D2',
-  },
-  input: {
-    borderWidth: 1,
-    borderColor: '#aaa',
-    padding: 10,
-    marginBottom: 15,
-    borderRadius: 8,
-  },
-});

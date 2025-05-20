@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, Button, StyleSheet, Switch, ScrollView } from 'react-native';
+import './style.css';
+import { useNavigate } from 'react-router-dom';
 
-export default function CadastroPaciente({ navigation }) {
+
+export default function CadastroPaciente() {
   const [formData, setFormData] = useState({
     nome: '',
     email: '',
@@ -18,111 +20,93 @@ export default function CadastroPaciente({ navigation }) {
     setFormData((prev) => ({ ...prev, [key]: value }));
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     console.log('Cadastro de paciente enviado:', formData);
+    alert('Cadastro realizado com sucesso!');
   };
 
   return (
-    <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.title}>Cadastro de Paciente</Text>
+    <div className="telaCadastro">
+      <form onSubmit={handleSubmit}>
+        <h1>Cadastro de Paciente</h1>
 
-      <TextInput
-        style={styles.input}
-        placeholder="Nome"
-        value={formData.nome}
-        onChangeText={(text) => handleChange('nome', text)}
-      />
-
-      <TextInput
-        style={styles.input}
-        placeholder="E-mail"
-        value={formData.email}
-        keyboardType="email-address"
-        onChangeText={(text) => handleChange('email', text)}
-      />
-
-      <TextInput
-        style={styles.input}
-        placeholder="Sexo (Masculino, Feminino, Outro)"
-        value={formData.sexo}
-        onChangeText={(text) => handleChange('sexo', text)}
-      />
-
-      <TextInput
-        style={styles.input}
-        placeholder="Data de Nascimento (dd/mm/aaaa)"
-        value={formData.dataNascimento}
-        onChangeText={(text) => handleChange('dataNascimento', text)}
-      />
-
-      <TextInput
-        style={styles.input}
-        placeholder="CPF"
-        value={formData.cpf}
-        onChangeText={(text) => handleChange('cpf', text)}
-      />
-
-      <TextInput
-        style={styles.input}
-        placeholder="Telefone"
-        value={formData.telefone}
-        keyboardType="phone-pad"
-        onChangeText={(text) => handleChange('telefone', text)}
-      />
-
-      <TextInput
-        style={styles.input}
-        placeholder="Endereço"
-        value={formData.endereco}
-        onChangeText={(text) => handleChange('endereco', text)}
-      />
-
-      <View style={styles.switchContainer}>
-        <Text>Possui plano de saúde?</Text>
-        <Switch
-          value={formData.possuiPlano}
-          onValueChange={(value) => handleChange('possuiPlano', value)}
+        <input
+          type="text"
+          placeholder="Nome"
+          value={formData.nome}
+          onChange={(e) => handleChange('nome', e.target.value)}
+          required
         />
-      </View>
 
-      {formData.possuiPlano && (
-        <TextInput
-          style={styles.input}
-          placeholder="Fornecedora do Plano"
-          value={formData.fornecedoraPlano}
-          onChangeText={(text) => handleChange('fornecedoraPlano', text)}
+        <input
+          type="email"
+          placeholder="E-mail"
+          value={formData.email}
+          onChange={(e) => handleChange('email', e.target.value)}
+          required
         />
-      )}
 
-      <Button title="Cadastrar" onPress={handleSubmit} />
-    </ScrollView>
+        <input
+          type="text"
+          placeholder="Sexo (Masculino, Feminino, Outro)"
+          value={formData.sexo}
+          onChange={(e) => handleChange('sexo', e.target.value)}
+          required
+        />
+
+        <input
+          type="text"
+          placeholder="Data de Nascimento (dd/mm/aaaa)"
+          value={formData.dataNascimento}
+          onChange={(e) => handleChange('dataNascimento', e.target.value)}
+          required
+        />
+
+        <input
+          type="text"
+          placeholder="CPF"
+          value={formData.cpf}
+          onChange={(e) => handleChange('cpf', e.target.value)}
+          required
+        />
+
+        <input
+          type="tel"
+          placeholder="Telefone"
+          value={formData.telefone}
+          onChange={(e) => handleChange('telefone', e.target.value)}
+          required
+        />
+
+        <input
+          type="text"
+          placeholder="Endereço"
+          value={formData.endereco}
+          onChange={(e) => handleChange('endereco', e.target.value)}
+          required
+        />
+
+        <label className="checkboxLabel">
+          <input
+            type="checkbox"
+            checked={formData.possuiPlano}
+            onChange={(e) => handleChange('possuiPlano', e.target.checked)}
+          />
+          <span className="checkboxText">Possui plano de saúde?</span>
+        </label>
+
+        {formData.possuiPlano && (
+          <input
+            type="text"
+            placeholder="Fornecedora do Plano"
+            value={formData.fornecedoraPlano}
+            onChange={(e) => handleChange('fornecedoraPlano', e.target.value)}
+          />
+        )}
+
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    padding: 20,
-    backgroundColor: '#fff',
-    flexGrow: 1,
-  },
-  title: {
-    fontSize: 22,
-    fontWeight: 'bold',
-    color: '#1976D2',
-    marginBottom: 20,
-    textAlign: 'center',
-  },
-  input: {
-    borderWidth: 1,
-    borderColor: '#ccc',
-    borderRadius: 8,
-    padding: 10,
-    marginBottom: 12,
-  },
-  switchContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 12,
-    justifyContent: 'space-between',
-  },
-});
