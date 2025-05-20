@@ -106,8 +106,12 @@ https://app.diagrams.net/#G14zJqllpdjw_fsRbqm58ENEzjXTNz4-ke#%7B%22pageId%22%3A%
  # 💻Relatório da programação em par
 
 Programar essa interface de cadastro em parceria foi uma experiência bastante produtiva e educativa, principalmente pois foi feita com uma boa divisão de tarefas e comunicação clara. 
+Antônio: "Realizei o desenvolvimento das 4 telas de cadastro ao lado da minha dupla david , a divisão do trabalho e do que cada um deveria fazer reduziu bastante o estresse que teríamos fazendo tudo individualemente , além disso aumentou a eficiência do desenvolvimento."
 
  <div align="left">
+
+# 🐛Bug Tracker
+Spritn 1: Tivemos algumas dificuldades de comunicação em relação a linguagem utilizada ao longo do desenvolvimento , com uma confusão entre react native e html , além disso nosso principal problema foi emular a aplicação ja que ela é feita para dispositivos mobile.
   
 # 🤝Integrantes 
 
