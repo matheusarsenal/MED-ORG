@@ -74,7 +74,7 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 
 ![Image](https://github.com/user-attachments/assets/586a1835-9dfd-4449-90e6-476603b6fd56)
 
-📱 # telas do aplicativo
+# 📱telas do aplicativo
 
 <img src="https://github.com/user-attachments/assets/5b896513-9036-4aca-aa2f-8835871f29f3" width="300"/>    <img src="https://github.com/user-attachments/assets/44d5bff1-3ea7-4f4f-ac41-582cea59a6e8" width="300"/><br>
                                                                                                                                                                                                                                                                                              
@@ -84,7 +84,7 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 
 <div align="left">
  
-# Historias de Usuário(jira)
+# 👨‍🦱Historias de Usuário(jira)
 
 ![image](https://github.com/user-attachments/assets/def95dfb-62b1-4842-a8de-5359345fb571)
 
