@@ -13,7 +13,8 @@
 
 
 <div align= "left">
-# 📓Escopo
+
+# 📘Escopo
 
 Criação de um site/aplicativo para a área da saúde com o objetivo de forneçer um serviço de auxilio de informação e automatização de uma consulta médica, tanto para a população quanto para as unidades de saude e profissionais.
 
