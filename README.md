@@ -80,7 +80,7 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 <img src="https://github.com/user-attachments/assets/5b896513-9036-4aca-aa2f-8835871f29f3" width="300"/>    <img src="https://github.com/user-attachments/assets/44d5bff1-3ea7-4f4f-ac41-582cea59a6e8" width="300"/><br>
                                                                                                                                                                                                                                                                                              
 
-<img src="https://github.com/user-attachments/assets/b5020296-99bf-46ff-8b7a-23cee285ae54" width="300"/> <img src="https://github.com/user-attachments/assets/faaf1db9-2345-4fac-a839-0ce2e135726a" width="300" height=450/><br>
+<img src="https://github.com/user-attachments/assets/b5020296-99bf-46ff-8b7a-23cee285ae54" width="300"/> <img src="https://github.com/user-attachments/assets/faaf1db9-2345-4fac-a839-0ce2e135726a" width="300" height=300/><br>
 
 
 <div align="left">
@@ -102,8 +102,8 @@ https://app.diagrams.net/#G14zJqllpdjw_fsRbqm58ENEzjXTNz4-ke#%7B%22pageId%22%3A%
 Programar essa interface de cadastro em parceria foi uma experiência bastante produtiva e educativa, principalmente pois foi feita com uma boa divisão de tarefas e comunicação clara. 
 Antônio: "Realizei o desenvolvimento das 4 telas de cadastro ao lado da minha dupla david , a divisão do trabalho e do que cada um deveria fazer reduziu bastante o estresse que teríamos fazendo tudo individualemente , além disso aumentou a eficiência do desenvolvimento."
 
-
-![Image](https://github.com/user-attachments/assets/531904ae-e33a-4bb2-8815-5ba2eb92cd46)
+<img src="https://github.com/user-attachments/assets/a335e874-7d97-4a34-8759-b44b681d6ece" width="400"/>
+ 
 
  <div align="left">
 
