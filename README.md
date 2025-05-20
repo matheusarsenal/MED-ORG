@@ -57,7 +57,7 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 ![Image](https://github.com/user-attachments/assets/d68246ad-58b5-47e1-9977-e84403d5259e)
 
 
-<img src="[caminho/para/imagem.png](https://github.com/user-attachments/assets/5b896513-9036-4aca-aa2f-8835871f29f3)" width="300"/>
+<img src="https://github.com/user-attachments/assets/5b896513-9036-4aca-aa2f-8835871f29f3" width="300"/>
 ![image](https://github.com/user-attachments/assets/5b896513-9036-4aca-aa2f-8835871f29f3)
 
 
