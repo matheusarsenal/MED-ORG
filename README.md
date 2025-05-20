@@ -60,15 +60,13 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 <img src="https://github.com/user-attachments/assets/5b896513-9036-4aca-aa2f-8835871f29f3" width="300"/>
 
 
-
-![image](https://github.com/user-attachments/assets/44d5bff1-3ea7-4f4f-ac41-582cea59a6e8)
-<img src="https://github.com/user-attachments/assets/5b896513-9036-4aca-aa2f-8835871f29f3" width="300"/>
-
-![image](https://github.com/user-attachments/assets/b5020296-99bf-46ff-8b7a-23cee285ae54)
-<img src="https://github.com/user-attachments/assets/5b896513-9036-4aca-aa2f-8835871f29f3" width="300"/>
+<img src="https://github.com/user-attachments/assets/44d5bff1-3ea7-4f4f-ac41-582cea59a6e8" width="300"/>
 
 
-![image](https://github.com/user-attachments/assets/faaf1db9-2345-4fac-a839-0ce2e135726a)
+<img src="https://github.com/user-attachments/assets/b5020296-99bf-46ff-8b7a-23cee285ae54" width="300"/>
+
+
+
 <img src="https://github.com/user-attachments/assets/faaf1db9-2345-4fac-a839-0ce2e135726a" width="300"/>
 
 
