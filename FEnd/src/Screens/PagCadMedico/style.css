@@ -53,3 +53,19 @@ img {
   height: 100px;
   width: 100px;
 }
+
+.voltar-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #1976d2;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.voltar-btn:hover {
+  text-decoration: underline;
+}

@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 
 
 export default function CadastroSecretario() {
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     nome: '',
     email: '',
@@ -33,6 +35,8 @@ export default function CadastroSecretario() {
 
   return (
     <div className="telaCadastro">
+      <button className="voltar-btn" onClick={() => navigate('/escolha')}>← Voltar</button>
+
       <form onSubmit={handleSubmit}>
         <h1>Cadastro de Secretário</h1>
 

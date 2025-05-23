@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 
 
 export default function CadastroMedico() {
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     nome: '',
     email: '',
@@ -41,6 +43,8 @@ export default function CadastroMedico() {
 
   return (
     <div className="telaCadastro">
+      <button className="voltar-btn" onClick={() => navigate('/escolha')}>← Voltar</button>
+
       <h1>Cadastro Médico</h1>
       <form onSubmit={handleSubmit}>
         <input

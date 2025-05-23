@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 
 
 export default function CadastroPaciente() {
+  const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     nome: '',
     email: '',
@@ -28,6 +30,8 @@ export default function CadastroPaciente() {
 
   return (
     <div className="telaCadastro">
+      <button className="voltar-btn" onClick={() => navigate('/escolha')}>← Voltar</button>
+
       <form onSubmit={handleSubmit}>
         <h1>Cadastro de Paciente</h1>
 

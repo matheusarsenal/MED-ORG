@@ -12,6 +12,8 @@ export default function TelaEscolhaCadastro() {
 
   return (
     <div className="telaEscolha">
+      <button className="voltar-btn" onClick={() => navigate('/')}>← Voltar</button>
+
       <h1 className="titleEscolha">Escolha o tipo de cadastro</h1>
 
       <button className="botaoEscolha" onClick={() => navegarPara('Medico')}>
