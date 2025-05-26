@@ -164,5 +164,119 @@ SELECT * FROM medicamento;
 
 
 
+DELIMITER $$
+
+CREATE PROCEDURE Agenda_medico(IN p_id_medico INT)
+BEGIN
+    SELECT * 
+    FROM agendamento
+    WHERE ID_medico = p_id_medico
+      AND data_consulta = CURDATE();
+END $$
+
+CREATE PROCEDURE Consulta_hospitais(IN p_id_paciente INT)
+BEGIN
+    DECLARE bairro_paciente VARCHAR(100);
+    SELECT endereço INTO bairro_paciente
+    FROM paciente
+    WHERE ID = p_id_paciente;
+
+    SELECT * 
+    FROM hospital
+    WHERE bairro = bairro_paciente;
+END $$
+
+CREATE PROCEDURE Agenda_semanal(IN p_id_hospital INT)
+BEGIN
+    SELECT * 
+    FROM agendamento
+    WHERE ID_hospital = p_id_hospital
+      AND YEARWEEK(data_consulta, 1) = YEARWEEK(CURDATE(), 1);
+END $$
+
+CREATE FUNCTION Consultas_recente(p_id_paciente INT)
+RETURNS BOOLEAN
+DETERMINISTIC
+BEGIN
+    DECLARE total INT;
+    SELECT COUNT(*) INTO total
+    FROM consulta
+    WHERE ID_paciente = p_id_paciente
+      AND data >= DATE_SUB(CURDATE(), INTERVAL 3 MONTH);
+
+    RETURN total >= 3;
+END $$
+
+CREATE TRIGGER agendamento_geriatra
+AFTER INSERT ON agendamento
+FOR EACH ROW
+BEGIN
+    DECLARE idade INT;
+    DECLARE geriatra_id INT;
+
+    SELECT TIMESTAMPDIFF(YEAR, data_de_nascimento, CURDATE()) INTO idade
+    FROM paciente
+    WHERE ID = NEW.ID_paciente;
+
+    IF idade >= 60 THEN
+        SELECT ID INTO geriatra_id
+        FROM medico
+        WHERE especialização LIKE '%Geriatra%'
+        LIMIT 1;
+
+        IF geriatra_id IS NOT NULL THEN
+            INSERT INTO agendamento (consultorio, data_consulta, hora, ID_medico, ID_hospital, ID_paciente)
+            VALUES (
+                NEW.consultorio,
+                DATE_ADD(NEW.data_consulta, INTERVAL 7 DAY),
+                NEW.hora,
+                geriatra_id,
+                NEW.ID_hospital,
+                NEW.ID_paciente
+            );
+        END IF;
+    END IF;
+END $$
+
+CREATE TABLE IF NOT EXISTS pacientes_observacao (
+    ID INT PRIMARY KEY,
+    nome VARCHAR(50),
+    observacao VARCHAR(300),
+    data_registro DATETIME DEFAULT CURRENT_TIMESTAMP
+) $$
+
+CREATE TRIGGER paciente_observacao
+AFTER INSERT ON consulta
+FOR EACH ROW
+BEGIN
+    DECLARE qtd INT;
+
+    SELECT COUNT(*) INTO qtd
+    FROM consulta
+    WHERE ID_paciente = NEW.ID_paciente
+      AND observacoes = NEW.observacoes
+      AND data >= DATE_SUB(CURDATE(), INTERVAL 3 MONTH);
+
+    IF qtd >= 3 THEN
+        INSERT IGNORE INTO pacientes_observacao (ID, nome, observacao)
+        SELECT ID, nome, NEW.observacoes
+        FROM paciente
+        WHERE ID = NEW.ID_paciente;
+    END IF;
+END $$
+
+CREATE ROLE IF NOT EXISTS Secretario $$ 
+CREATE ROLE IF NOT EXISTS Medico $$ 
+CREATE ROLE IF NOT EXISTS Paciente $$ 
+
+GRANT SELECT, INSERT, DELETE, UPDATE ON med_org.* TO 'Secretario' $$ 
+GRANT SELECT, UPDATE ON med_org.* TO 'Medico' $$ 
+GRANT SELECT ON med_org.* TO 'Paciente' $$
+
+DELIMITER ;
+
+
+
+
 
 
