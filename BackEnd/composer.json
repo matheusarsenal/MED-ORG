@@ -1,0 +1,31 @@
+Exemplo básico de um composer.json para um projeto PHP:
+{
+  "name": "seunome/meu-projeto",
+  "description": "API RESTful em PHP",
+  "type": "project",
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Seu Nome",
+      "email": "seu@email.com"
+    }
+  ],
+  "minimum-stability": "stable"
+}
+
+Explicação dos campos:
+Campo	Função
+name	Nome do projeto (geralmente autor/projeto)
+description	Uma descrição do que o projeto faz
+type	Tipo do projeto (ex: library, project, etc.)
+require	Lista de dependências (ex: versão mínima do PHP ou bibliotecas)
+autoload	Como carregar automaticamente os arquivos da aplicação
+authors	Informações dos autores do projeto
+minimum-stability	Define o nível mínimo de estabilidade das dependências (stable)
