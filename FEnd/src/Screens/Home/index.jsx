@@ -9,13 +9,42 @@ export default function HomeScreen() {
   const [senha, setSenha] = useState('');
   const [manterConectado, setManterConectado] = useState(false);
 
+  const excluirConta = async () => {
+    const confirmacao = window.confirm('Tem certeza que deseja excluir sua conta? Esta ação é irreversível.');
+    if (!confirmacao) return;
+
+    try {
+      const params = new URLSearchParams();
+      params.append('email', email);
+      params.append('senha', senha);
+
+      const response = await fetch('http://localhost/api/deletar_usuario.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: params.toString(),
+      });
+
+      const data = await response.json();
+      if (data.sucesso) {
+        alert('Conta excluída com sucesso!');
+        setEmail('');
+        setSenha('');
+      } else {
+        alert(`Erro: ${data.mensagem}`);
+      }
+    } catch (error) {
+      alert('Erro ao conectar com o servidor.');
+    }
+  };
+
   return (
     <div className="telaLogin">
       <img src={MedLogo} alt="Logo MedOrg" />
-
       <h1>Login</h1>
 
-      <form>
+      <form onSubmit={(e) => e.preventDefault()}>
         <input
           type="email"
           placeholder="Digite seu email"
@@ -38,6 +67,14 @@ export default function HomeScreen() {
           // Lógica de login aqui...
         }}>
           Entrar
+        </button>
+
+        <button
+          type="button"
+          style={{ backgroundColor: 'red', color: 'white' }}
+          onClick={excluirConta}
+        >
+          Excluir Conta
         </button>
 
         <label style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '14px' }}>
