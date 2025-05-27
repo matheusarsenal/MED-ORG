@@ -130,7 +130,11 @@ Sprint 1: https://drive.google.com/file/d/19PVah3Ub30tLBZjGN-6uS3thKhYEsM7w/view
 
 - Salomão Pernambucano Lima Galindo
 
-  
+# modelo conceitual
+![Image](https://github.com/user-attachments/assets/4216bb19-ef05-42eb-8f30-10060b4cd1da)
+
+# modelo logico
+![Image](https://github.com/user-attachments/assets/32b86eb8-9505-489a-aed9-24d43788b695)
 
 
  
