@@ -1,12 +1,11 @@
 <?php
-header("Access-Control-Allow-Origin: *"); 
-header("Access-Control-Allow-Headers: Content-Type");
-header("Access-Control-Allow-Methods: POST");
-header("Content-Type: application/json");
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: *");
+header("Content-Type: application/json; charset=UTF-8");
 
-// Conexão com o banco
-require_once(__DIR__ . '/../conexao.php');
+include(__DIR__ . '/../conexao.php');
 
+// Receber os dados em JSON
 $dados = json_decode(file_get_contents("php://input"), true);
 
 if (!$dados) {
@@ -14,20 +13,30 @@ if (!$dados) {
     exit;
 }
 
-$id_paciente = mysqli_real_escape_string($conn, $dados['id_paciente'] ?? '');
-$id_medico = mysqli_real_escape_string($conn, $dados['id_medico'] ?? '');
-$id_hospital = mysqli_real_escape_string($conn, $dados['id_hospital'] ?? '');
-$data = mysqli_real_escape_string($conn, $dados['data'] ?? '');
-$hora = mysqli_real_escape_string($conn, $dados['hora'] ?? '');
-$observacoes = mysqli_real_escape_string($conn, $dados['observacoes'] ?? '');
+// Escapar os dados
+$nome = mysqli_real_escape_string($conn, $dados['nome'] ?? '');
+$email = mysqli_real_escape_string($conn, $dados['email'] ?? '');
+$senha = mysqli_real_escape_string($conn, $dados['senha'] ?? '');
+$telefone = mysqli_real_escape_string($conn, $dados['telefone'] ?? '');
+$cpf = mysqli_real_escape_string($conn, $dados['cpf'] ?? '');
+$data_de_nascimento = mysqli_real_escape_string($conn, $dados['data_de_nascimento'] ?? '');
+$sexo = mysqli_real_escape_string($conn, $dados['sexo'] ?? '');
+$endereco = mysqli_real_escape_string($conn, $dados['endereco'] ?? '');
+$possui_plano = mysqli_real_escape_string($conn, $dados['possui_plano'] ?? '');
+$fornecedora_plano = mysqli_real_escape_string($conn, $dados['fornecedora_plano'] ?? '');
 
-$sql = "INSERT INTO agendamento 
-    (id_paciente, id_medico, id_hospital, data, hora, observacoes) 
+// Hash da senha (boa prática)
+$senha_hash = password_hash($senha, PASSWORD_DEFAULT);
+
+// Query SQL
+$sql = "INSERT INTO paciente 
+    (nome, email, senha, telefone, cpf, data_de_nascimento, sexo, endereco, possui_plano, fornecedora_plano) 
     VALUES 
-    ('$id_paciente', '$id_medico', '$id_hospital', '$data', '$hora', '$observacoes')";
+    ('$nome', '$email', '$senha_hash', '$telefone', '$cpf', '$data_de_nascimento', '$sexo', '$endereco', '$possui_plano', '$fornecedora_plano')";
 
+// Executar e responder
 if ($conn->query($sql) === TRUE) {
-    echo json_encode(["mensagem" => "Agendamento cadastrado com sucesso."]);
+    echo json_encode(["mensagem" => "Paciente cadastrado com sucesso."]);
 } else {
     echo json_encode(["mensagem" => "Erro ao cadastrar: " . $conn->error]);
 }
