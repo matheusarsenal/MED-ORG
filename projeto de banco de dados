@@ -1,27 +1,11 @@
-# area referente ao projeto de banco de dados
+#area relativa ao projeto de banco de dados
 
 
-# modelo logico
-
-
-
-
-
-# modelo conceitual
-
-
-
-
-# modelo fisico(mysql)
-
+# modelo fisico em Myql
 
 create database IF NOT EXISTS med_org;
 
-
-
 USE med_org;
-
-
 
 CREATE TABLE IF NOT exists paciente (
 ID int auto_increment NOT NULL,
@@ -34,15 +18,9 @@ data_de_nascimento date NOT NULL,
 sexo VARCHAR(15) CHECK (sexo IN ('Masculino', 'Feminino', 'Outro')),
 PRIMARY KEY(ID,nome,CPF)
 
-
-
 );
 
-
-
-SELECT * FROM paciente;
-
-
+SELECT * FROM paciente; 
 
 CREATE TABLE IF NOT exists medico (
 ID int auto_increment NOT NULL,
@@ -54,18 +32,12 @@ senha varchar(300) NOT NULL,
 data_de_nascimento date NOT NULL,
 sexo VARCHAR(20) CHECK (sexo IN ('Masculino', 'Feminino', 'Outro')) NOT NULL,
 especialização varchar(40),
-CRM varchar(30) NOT NULL, 
+CRM varchar(30) NOT NULL, 
 PRIMARY KEY(ID,CRM,nome)
-
-
 
 );
 
-
-
 SELECT * FROM medico;
-
-
 
 CREATE TABLE IF NOT EXISTS secretario (
 ID int auto_increment NOT NULL,
@@ -80,12 +52,7 @@ sexo VARCHAR(10) CHECK (sexo IN ('Masculino', 'Feminino', 'Outro')),
 primary key(ID,cpf,nome)
 );
 
-
-
 SELECT * FROM secretario;
-
-
-
 
 
 create table IF NOT exists hospital(
@@ -95,18 +62,10 @@ bairro varchar(100) NOT NULL,
 rua varchar(100) NOT NULL,
 PRIMARY KEY(ID,nome)
 
-
-
-);
-
-
-
+); 
 
 
 SELECT * FROM hospital;
-
-
-
 
 
 create table IF NOT exists agendamento(
@@ -124,44 +83,33 @@ foreign key(ID_paciente) references paciente(ID),
 PRIMARY KEY(ID)
 );
 
-
-
 SELECT * FROM agendamento;
 
 
 
-
-
 CREATE TABLE IF NOT EXISTS consulta (
-    ID int AUTO_INCREMENT NOT NULL,
-    ID_paciente int NOT NULL,
-    ID_medico int NOT NULL,
-    data DATETIME NOT NULL,
-    observacoes TEXT,
-    FOREIGN KEY (ID_paciente) REFERENCES paciente(ID),
-    FOREIGN KEY (ID_medico) REFERENCES medico(ID),
-    primary key(ID)
+    ID int AUTO_INCREMENT NOT NULL,
+    ID_paciente int NOT NULL,
+    ID_medico int NOT NULL,
+    data DATETIME NOT NULL,
+    observacoes TEXT,
+    FOREIGN KEY (ID_paciente) REFERENCES paciente(ID),
+    FOREIGN KEY (ID_medico) REFERENCES medico(ID),
+    primary key(ID)
 );
-
-
 
 SELECT * FROM consulta;
 
-
-
 CREATE TABLE IF NOT EXISTS medicamento (
-    ID int AUTO_INCREMENT,
-    nome VARCHAR(100) NOT NULL,
-    prescricao TEXT NOT NULL,
-    ID_consulta int,
-    FOREIGN KEY (ID_consulta) REFERENCES consulta(ID),
-    primary key(ID)
+    ID int AUTO_INCREMENT,
+    nome VARCHAR(100) NOT NULL,
+    prescricao TEXT NOT NULL,
+    ID_consulta int,
+    FOREIGN KEY (ID_consulta) REFERENCES consulta(ID),
+    primary key(ID)
 );
 
-
-
 SELECT * FROM medicamento;
-
 
 
 DELIMITER $$
@@ -274,7 +222,6 @@ GRANT SELECT, UPDATE ON med_org.* TO 'Medico' $$
 GRANT SELECT ON med_org.* TO 'Paciente' $$
 
 DELIMITER ;
-
 
 
 
