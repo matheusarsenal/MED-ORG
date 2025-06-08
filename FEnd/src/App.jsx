@@ -10,6 +10,7 @@ import PrescricaoMedica from './Screens/PrescricaoMedica'
 import PrescricaoPaciente from './Screens/PrescricaoPaciente'
 import Suporte from './Screens/PagSuporte'
 import Chat from './Screens/BatePapo'
+import MenuServicos from './Screens/Servicos';
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
         <Route path="/prescricao-paciente" element={<PrescricaoPaciente />} />
         <Route path="/suporte" element={<Suporte />} />
         <Route path="/chat" element={<Chat />} />
+        <Route path="/servicos-oferecidos" element={<MenuServicos />} />
       </Routes>
     </Router>
   )
