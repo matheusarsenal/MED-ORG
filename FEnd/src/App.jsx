@@ -6,6 +6,8 @@ import CadastroMedico from './Screens/PagCadMedico';
 import CadastroPaciente from './Screens/PagCadPaciente';
 import CadastroSecretario from './Screens/PagCadSecretario';
 import HomeScreen from './Screens/Home';
+import PrescricaoMedica from './Screens/PrescricaoMedica'
+import PrescricaoPaciente from './Screens/PrescricaoPaciente'
 
 export default function App() {
   return (
@@ -16,6 +18,8 @@ export default function App() {
         <Route path="/cadastro-medico" element={<CadastroMedico />} />
         <Route path="/cadastro-paciente" element={<CadastroPaciente />} />
         <Route path="/cadastro-secretario" element={<CadastroSecretario />} />
+        <Route path="/prescricao-medica" element={<PrescricaoMedica />} />
+        <Route path="/prescricao-paciente" element={<PrescricaoPaciente />} />
       </Routes>
     </Router>
   )

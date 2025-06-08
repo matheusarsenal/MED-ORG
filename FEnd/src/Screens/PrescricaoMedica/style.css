@@ -1,0 +1,69 @@
+.prescricao-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.prescricao-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.prescricao-header h2 {
+  margin: 0 auto;
+  text-align: center;
+  flex: 1;
+  color: #007bff
+}
+
+.voltar-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.prescricao-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.prescricao-form input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn.azul {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn.azul:hover {
+  background-color: #0056b3;
+}
