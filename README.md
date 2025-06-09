@@ -110,8 +110,10 @@ Antônio: "Realizei o desenvolvimento das 4 telas de cadastro ao lado da minha d
 # 🐛Bug Tracker
 Sprint 1: Tivemos algumas dificuldades de comunicação em relação a linguagem utilizada ao longo do desenvolvimento , com uma confusão entre react native e html , além disso nosso principal problema foi emular a aplicação ja que ela é feita para dispositivos mobile.
 https://github.com/matheusarsenal/MED-ORG/issues
+
 Sprint 2: Tivemos algumas dificuldades em relação a linguagem sendo necessário utilizar react web para realizar os testes.
 https://github.com/matheusarsenal/MED-ORG/issues
+
 Sprint 3: Tivemos alguns problemas em relação a integração com o banco de dados , utilizando php e mySql , com o php para o react ja que não sabiamos programar em php anteriormente.
 https://github.com/matheusarsenal/MED-ORG/issues
 
