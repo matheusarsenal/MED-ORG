@@ -23,16 +23,6 @@ form h1 {
   text-align: center;
 }
 
-form input,
-form select {
-  border: 1px solid rgba(184, 184, 184, 0.562);
-  height: 35px;
-  background-color: #fff;
-  font-size: 16px;
-  padding-left: 10px;
-  outline: none;
-}
-
 form button {
   background-color: #1976D2;
   height: 40px;
@@ -71,4 +61,20 @@ form button:hover {
 
 .voltar-btn:hover {
   text-decoration: underline;
+}
+
+.botao-cadastrar {
+  background-color: #007bff !important;
+  color: white !important;
+  border: none;
+  border-radius: 6px;
+  height: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0 20px;
+  transition: background-color 5.0s ease;
+}
+
+.botao-cadastrar:hover {
+  background-color: #0070d9 !important;
 }

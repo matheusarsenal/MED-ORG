@@ -6,7 +6,7 @@
 }
 
 h1 {
-  color: #000000;
+  color: #007bff !important;
   font-size: 24px;
   text-align: center;
 }
@@ -21,30 +21,6 @@ form {
   max-width: 90%;
   width: 400px;
   margin-bottom: 20px;
-}
-
-form input,
-form select {
-  border: 1px solid rgba(184, 184, 184, 0.562);
-  height: 35px;
-  background-color: #fff;
-  font-size: 16px;
-  padding-left: 10px;
-  outline: none;
-}
-
-form button {
-  background-color: rgb(25, 118, 210);
-  height: 40px;
-  border: none;
-  cursor: pointer;
-  color: white;
-  font-weight: bold;
-  transition: opacity 0.3s;
-}
-
-form button:hover {
-  opacity: 0.8;
 }
 
 img {
@@ -68,4 +44,20 @@ img {
 
 .voltar-btn:hover {
   text-decoration: underline;
+}
+
+.botao-cadastrar {
+  background-color: #007bff !important;
+  color: white !important;
+  border: none;
+  border-radius: 6px;
+  height: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0 20px;
+  transition: background-color 5.0s ease;
+}
+
+.botao-cadastrar:hover {
+  background-color: #0070d9 !important;
 }

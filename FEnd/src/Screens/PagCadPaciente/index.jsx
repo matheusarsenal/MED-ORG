@@ -109,7 +109,7 @@ export default function CadastroPaciente() {
           />
         )}
 
-        <button type="submit">Cadastrar</button>
+        <button type="submit" className="botao-cadastrar">Cadastrar</button>
       </form>
     </div>
   );

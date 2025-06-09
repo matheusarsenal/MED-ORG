@@ -104,7 +104,7 @@ export default function CadastroMedico() {
           onChange={handleChange}
         />
 
-        <button type="submit">Cadastrar</button>
+        <button type="submit" className="botao-cadastrar">Cadastrar</button>
       </form>
     </div>
   );
