@@ -11,6 +11,9 @@ import PrescricaoPaciente from './Screens/PrescricaoPaciente'
 import Suporte from './Screens/PagSuporte'
 import Chat from './Screens/BatePapo'
 import MenuServicos from './Screens/Servicos';
+import HomeMedico from './Screens/HomeMedico';
+import HomePaciente from './Screens/HomePaciente';
+import HomeSecretario from './Screens/HomeSecretario';
 
 export default function App() {
   return (
@@ -26,6 +29,9 @@ export default function App() {
         <Route path="/suporte" element={<Suporte />} />
         <Route path="/chat" element={<Chat />} />
         <Route path="/servicos-oferecidos" element={<MenuServicos />} />
+        <Route path="/home-medico" element={<HomeMedico />} />
+        <Route path="/home-secretario" element={<HomeSecretario />} />
+        <Route path="/home-paciente" element={<HomePaciente />} />
       </Routes>
     </Router>
   )
