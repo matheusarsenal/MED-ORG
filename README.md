@@ -83,6 +83,19 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 <img src="https://github.com/user-attachments/assets/b5020296-99bf-46ff-8b7a-23cee285ae54" width="300"/> <img src="https://github.com/user-attachments/assets/faaf1db9-2345-4fac-a839-0ce2e135726a" width="300" height=450/><br>
 
 
+<img src="https://github.com/user-attachments/assets/08718cbb-666b-4e3d-a8f9-56642e578eba" width="300"/> <img src="https://github.com/user-attachments/assets/03244278-fd6d-46df-a4f8-65cfd13fd859" width="300" height=450/><br>
+
+
+<img src="https://github.com/user-attachments/assets/6019bbca-7203-41ce-a313-4516fbaec4e7" width="300"/> <img src="https://github.com/user-attachments/assets/856ea700-ddd2-437e-ba41-528ac9e231ef" width="300" height=450/><br>
+
+
+<img src="https://github.com/user-attachments/assets/3ded6081-27de-4d14-8dd5-fe8d7fa83cbb" width="300"/> <img src="https://github.com/user-attachments/assets/d75dd618-cd03-4f6a-9bd4-43ba48cb9d45" width="300" height=450/><br>
+
+
+
+
+
+
 <div align="left">
  
 # 👨‍🦱Historias de Usuário(jira)
