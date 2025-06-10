@@ -120,7 +120,7 @@ David: "Eu e Antônio ficamos responsáveis pelas 3 telas de menu, sendo elas a 
 
 Lucas: "Durante o periodo de programação em pares, eu e Diogo fizemos 4 das telas do sistema (incluindo login e chat), nós separamos a quantidade de telas para que cada um ficasse com 2, e durante o processo de programação ajudamos um ao outro a testar e verificar o codigo de um ao outro."
 
-dacio: "junto a minha dupla matheus realisei o desinvolvimento do banco de dados e backend de conecção php, trabalhamos em conjunto em pro de atualisar um ao outro vista a nesseciade de integraçao destas areas. trabalhar com o mesmo e mostrou pratico e produtivo alem de eficiente."
+dacio: "junto a minha dupla matheus realisei o desinvolvimento do banco de dados e backend de conecção php, trabalhamos em conjunto em pro de atualisar um ao outro vista a nesseciade de integraçao destas areas. trabalhar com o mesmo se mostrou pratico e produtivo alem de eficiente."
 
 <img src="https://github.com/user-attachments/assets/aabb1692-423b-4114-acba-470c70ea0205" width="400"/>
 
