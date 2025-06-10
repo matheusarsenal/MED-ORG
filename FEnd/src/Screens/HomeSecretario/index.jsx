@@ -10,12 +10,12 @@ const HomeSecretario = () => {
 
   const [hora, setHora] = useState(new Date());
 
-  //useEffect(() => {
-  //  if (!usuarioSalvo || tipoUsuario !== "secretario") {
-  //    alert("Acesso permitido apenas para secretários.");
-  //    navigate("/");
-  //  }
-  //}, [usuarioSalvo, tipoUsuario, navigate]);
+  // useEffect(() => {
+  //   if (!usuarioSalvo || tipoUsuario !== "secretario") {
+  //     alert("Acesso permitido apenas para secretários.");
+  //     navigate("/");
+  //   }
+  // }, [usuarioSalvo, tipoUsuario, navigate]);
 
   useEffect(() => {
     const timer = setInterval(() => setHora(new Date()), 60000);
@@ -28,6 +28,7 @@ const HomeSecretario = () => {
     { label: "Mapa", icon: "📍", path: "/mapa" },
     { label: "Configuração", icon: "⚙️", path: "/configuracao" },
     { label: "Conta", icon: "👤", path: "/conta" },
+    { label: "Suporte", icon: "🆘", path: "/suporte" },  // novo botão adicionado aqui
   ];
 
   return (

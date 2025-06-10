@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
 }
- 
+
 .home-container {
   width: 100%;
   min-height: 100vh;
@@ -13,7 +13,7 @@
   padding: 0;
   margin: 0;
 }
- 
+
 .home-header {
   width: 100%;
   background-color: #1e3a8a; /* azul escuro */
@@ -25,22 +25,22 @@
   justify-content: space-between;
   align-items: center;
 }
- 
+
 .hora {
   font-size: 0.9rem;
   opacity: 0.8;
 }
- 
+
 .usuario-nome {
   width: 100%;
-  background-color: #f8d7da; /* vermelho claro */
+  background-color: #e0e7ff; /* azul bem clarinho para contraste suave */
   text-align: center;
   padding: 8px 0;
   font-weight: 600;
   font-size: 1rem;
-  color: #721c24;
+  color: #1e3a8a; /* azul escuro */
 }
- 
+
 .menu-container {
   display: flex;
   flex-direction: column;
@@ -49,14 +49,14 @@
   width: 100%;
   max-width: 420px;
 }
- 
+
 .menu-item {
   display: flex;
   align-items: center;
   gap: 12px;
-  background-color: #cff4fc; /* azul claro */
-  border: 2px solid #2563eb; /* azul médio */
-  color: #1e40af; /* azul mais escuro */
+  background-color: #ffffff; /* fundo branco para os botões */
+  border: 2px solid #1e3a8a; /* azul escuro */
+  color: #1e3a8a; /* azul escuro no texto */
   font-weight: 600;
   padding: 12px 20px;
   border-radius: 12px;
@@ -64,52 +64,53 @@
   transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
   font-size: 1.1rem;
 }
- 
+
 .menu-item:hover {
-  background-color: #bae6fd;
-  border-color: #1d4ed8;
+  background-color: #dbeafe; /* azul clarinho ao passar o mouse */
+  border-color: #2563eb; /* azul médio no hover */
   transform: translateY(-2px);
 }
- 
+
 .menu-item:focus {
-  outline: 3px solid #2563eb;
+  outline: 3px solid #2563eb; /* azul médio no foco */
   outline-offset: 2px;
-  background-color: #bae6fd;
+  background-color: #dbeafe;
 }
- 
+
 .menu-item:active {
-  background-color: #93c5fd;
-  border-color: #1e40af;
+  background-color: #bfdbfe; /* azul médio mais escuro */
+  border-color: #1e40af; /* azul escuro */
 }
- 
+
 .menu-item:disabled {
-  background-color: #e5e7eb;
+  background-color: #f3f4f6;
   color: #9ca3af;
   border-color: #d1d5db;
   cursor: not-allowed;
 }
- 
+
 .menu-icon {
   font-size: 1.8rem;
+  color: #1e3a8a; /* ícones azuis */
 }
- 
+
 /* Responsividade para telas pequenas */
 @media (max-width: 400px) {
   .menu-container {
     max-width: 100%;
     padding: 10px;
   }
- 
+
   .menu-item {
     font-size: 1rem;
     padding: 10px 16px;
   }
- 
+
   .menu-icon {
     font-size: 1.5rem;
   }
 }
- 
+
 /* Layout para tablets ou telas médias */
 @media (min-width: 500px) {
   .menu-container {
@@ -117,7 +118,7 @@
     flex-wrap: wrap;
     justify-content: center;
   }
- 
+
   .menu-item {
     flex: 1 1 45%;
     justify-content: center;

@@ -23,7 +23,7 @@
 .home-header .hora {
   font-weight: 500;
   font-size: 1.1rem;
-  color: #34495e;
+  color: #ffffff;
 }
 
 /* Nome do usuário */
@@ -62,6 +62,19 @@
   background-color: #2980b9;
   color: white;
   box-shadow: 0 4px 12px rgba(41, 128, 185, 0.5);
+}
+
+/* Destaque para o botão Suporte */
+.menu-item.suporte {
+  border-color: #e67e22;
+  color: #e67e22;
+  box-shadow: 0 2px 5px rgba(230, 126, 34, 0.3);
+}
+
+.menu-item.suporte:hover {
+  background-color: #e67e22;
+  color: white;
+  box-shadow: 0 4px 12px rgba(230, 126, 34, 0.7);
 }
 
 /* Ícone do menu */

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import './style.css';
 
@@ -9,12 +9,12 @@ const HomeMedico = () => {
   const userName = usuarioSalvo?.nome || "Médico";
   const tipoUsuario = usuarioSalvo?.tipo;
 
-  //useEffect(() => {
-  //  if(tipoUsuario !== "medico") {
-  //    alert("Acesso permitido apenas para médicos.");
-   //   navigate("/");
-   // }
-  //}, [tipoUsuario, navigate]);
+  // useEffect(() => {
+  //   if(tipoUsuario !== "medico") {
+  //     alert("Acesso permitido apenas para médicos.");
+  //     navigate("/");
+  //   }
+  // }, [tipoUsuario, navigate]);
 
   const menuItems = [
     { label: "Lista de Consultas", icon: "📋", path: "/consultas" },
@@ -24,6 +24,7 @@ const HomeMedico = () => {
     { label: "Mapa", icon: "📍", path: "/mapa" },
     { label: "Conta", icon: "👤", path: "/conta" },
     { label: "Configurações", icon: "⚙️", path: "/configuracoes" },
+    { label: "Suporte", icon: "🛠️", path: "/suporte" },
   ];
 
   return (
@@ -42,7 +43,7 @@ const HomeMedico = () => {
           <button
             key={index}
             onClick={() => navigate(item.path)}
-            className="menu-item"
+            className={`menu-item ${item.label === "Suporte" ? "suporte" : ""}`}
           >
             <span className="menu-icon">{item.icon}</span>
             <span>{item.label}</span>
