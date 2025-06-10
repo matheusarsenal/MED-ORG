@@ -104,7 +104,7 @@ Antônio: "Realizei o desenvolvimento das 4 telas de cadastro ao lado da minha d
 
 <img src="https://github.com/user-attachments/assets/a335e874-7d97-4a34-8759-b44b681d6ece" width="400"/>
 
-![image](https://github.com/user-attachments/assets/aabb1692-423b-4114-acba-470c70ea0205)
+<img src="https://github.com/user-attachments/assets/aabb1692-423b-4114-acba-470c70ea0205" width="400"/>
 
  
 
