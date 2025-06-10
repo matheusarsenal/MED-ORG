@@ -103,9 +103,7 @@ Programar essa interface de cadastro em parceria foi uma experiência bastante p
 Antônio: "Realizei o desenvolvimento das 4 telas de cadastro ao lado da minha dupla david , a divisão do trabalho e do que cada um deveria fazer reduziu bastante o estresse que teríamos fazendo tudo individualemente , além disso aumentou a eficiência do desenvolvimento."
 
 <img src="https://github.com/user-attachments/assets/a335e874-7d97-4a34-8759-b44b681d6ece" width="400"/>
-
 <img src="https://github.com/user-attachments/assets/aabb1692-423b-4114-acba-470c70ea0205" width="400"/>
-
 <img src="https://github.com/user-attachments/assets/daa807d4-5d35-4896-8657-c7eaa9ad3a09" width="400"/>
 
 
