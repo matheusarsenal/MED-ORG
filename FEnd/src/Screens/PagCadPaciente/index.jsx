@@ -26,6 +26,7 @@ export default function CadastroPaciente() {
     e.preventDefault();
     console.log('Cadastro de paciente enviado:', formData);
     alert('Cadastro realizado com sucesso!');
+    navigate('/home-paciente');
   };
 
   return (

@@ -9,6 +9,14 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.home-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ecf0f1; /* opcional */
+}
+
 /* Cabeçalho */
 .home-header {
   display: flex;

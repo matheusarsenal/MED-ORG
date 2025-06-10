@@ -31,6 +31,7 @@ export default function CadastroSecretario() {
 
     console.log('Cadastro de secretário enviado:', formData);
     alert('Cadastro realizado com sucesso!');
+    navigate('/home-secretario');
   };
 
   return (

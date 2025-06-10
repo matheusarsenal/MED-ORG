@@ -39,6 +39,7 @@ export default function CadastroMedico() {
 
     console.log('Cadastro médico enviado:', formData);
     alert('Cadastro realizado com sucesso!');
+    navigate('/home-medico');
   };
 
   return (

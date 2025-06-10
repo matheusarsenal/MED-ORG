@@ -28,27 +28,29 @@ const HomeMedico = () => {
   ];
 
   return (
-    <div className="home-container">
-      <header className="home-header">
-        <span>MED-ORG</span>
-        <span className="hora">
-          {new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
-        </span>
-      </header>
+    <div className="home-wrapper">
+      <div className="home-container">
+        <header className="home-header">
+          <span>MED-ORG</span>
+          <span className="hora">
+            {new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
+          </span>
+        </header>
 
-      <div className="usuario-nome">Olá, {userName}</div>
+        <div className="usuario-nome">Olá, {userName}</div>
 
-      <div className="menu-container">
-        {menuItems.map((item, index) => (
-          <button
-            key={index}
-            onClick={() => navigate(item.path)}
-            className={`menu-item ${item.label === "Suporte" ? "suporte" : ""}`}
-          >
-            <span className="menu-icon">{item.icon}</span>
-            <span>{item.label}</span>
-          </button>
-        ))}
+        <div className="menu-container">
+          {menuItems.map((item, index) => (
+            <button
+              key={index}
+              onClick={() => navigate(item.path)}
+              className={`menu-item ${item.label === "Suporte" ? "suporte" : ""}`}
+            >
+              <span className="menu-icon">{item.icon}</span>
+              <span>{item.label}</span>
+            </button>
+          ))}
+        </div>
       </div>
     </div>
   );
