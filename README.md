@@ -21,16 +21,16 @@ Criação de um site/aplicativo para a área da saúde com o objetivo de forneç
 
 # 🎯Objetivos
 
-O escopo do produto tem o intuito de automatizar diferentes objetivos para a população e para a os profissinais. Para a população o foco primario é para informação e acompanhamento do sistema para uma consulta médica, facilitando o a busca e pesquisa sobre médicos especializados nas aréas necessarias para o paciente, já o médico pode utilizar nosso aplicativo como um repositorio com suas especializações, seus horarios disponiveis, hospitais em que trabalha, e a situação atual de seus clientes.
+O escopo do produto tem o intuito de automatizar diferentes objetivos para a população e para os profissinais. Para a população o foco primário é para a informação e acompanhamento do sistema para uma consulta médica, facilitando assim a busca e pesquisa sobre médicos especializados nas aréas necessárias para o paciente, já o médico pode utilizar nosso aplicativo como um repositório com suas especializações, seus horários disponiveis, hospitais em que trabalha, e a situação atual de seus clientes.
 
 
 
 # 📱Funcionalidades
-### 🗺️ Com os objetivos de informatização e acompanhamento, a funcionalidade principal e um mapa contendo as unidades de saude e as seguites informações de cada:
+### 🗺️ Com os objetivos de informatização e acompanhamento, a funcionalidade principal é um mapa contendo as unidades de saude e as seguites informações de cada:
 
-- Localização das unidades de saude via GPS.
+- Localização das unidades de saúde via GPS.
 
-- Serviços oferecidos(areas) pelo hospital.
+- Serviços oferecidos(áreas) pelo hospital.
 
 - Número de pacientes e profissionais(médicos) registrados no local, e se eles estão presentes.
 
@@ -38,11 +38,11 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 
 ### 📔Além disso, o usuário também poderá usar as seguites funcionalidades extras:
 
-- Baixar ou tirar prescriçãoes medicas de forma online, excluindo a necessidade do papel.
+- Baixar ou tirar prescrições médicas de forma online, excluindo a necessidade do papel.
 
-- Conversar diretamente com o medico de forma remota atraves do aplicativo para acompanhamento.
+- Conversar diretamente com o médico de forma remota através do aplicativo para acompanhamento.
 
-- fazer Agendamentos de consultas com o médico especifico.
+- Fazer Agendamentos de consultas com o médico específico.
 
   
 
@@ -75,7 +75,7 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 
 ![Image](https://github.com/user-attachments/assets/586a1835-9dfd-4449-90e6-476603b6fd56)
 
-# 📱telas do aplicativo
+# 📱Telas do aplicativo
 
 <img src="https://github.com/user-attachments/assets/5b896513-9036-4aca-aa2f-8835871f29f3" width="300"/>    <img src="https://github.com/user-attachments/assets/44d5bff1-3ea7-4f4f-ac41-582cea59a6e8" width="300"/><br>
                                                                                                                                                                                                                                                                                              
@@ -136,22 +136,22 @@ Sprint 1: https://drive.google.com/file/d/19PVah3Ub30tLBZjGN-6uS3thKhYEsM7w/view
 
 - Salomão Pernambucano Lima Galindo
 
-# modelo conceitual
+# Modelo Conceitual
 ![Image](https://github.com/user-attachments/assets/4216bb19-ef05-42eb-8f30-10060b4cd1da)
 
-# modelo logico
+# Modelo Lógico
 ![Image](https://github.com/user-attachments/assets/32b86eb8-9505-489a-aed9-24d43788b695)
 
 
  
-# ⚙️adicionais
+# ⚙️Adicionais
 
-## Link do protótipo:
+## Link do Protótipo:
 <div align="center">
  
 [<img src="https://github.com/user-attachments/assets/dbcced9d-86c8-4ad1-9889-3563c3b3df97" width="100" height="100">](https://ai2.appinventor.mit.edu/#4644208094806016)
 
-## Link do jira:
+## Link do Jira:
 <div align="center">
  
 [<img src="https://github.com/user-attachments/assets/e1bd292f-9d9f-41c5-bf57-12124c87dfaa" widht="100" height="100">](https://unicap-team-foo2rsaj.atlassian.net/jira/software/projects/DP/boards/1)
