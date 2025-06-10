@@ -1,12 +1,16 @@
-import './style.css'
+import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import './style.css'
 
 function Suporte() {
+    const navigate = useNavigate();
+
     return (
-        <div className='SupTec'> 
+        <div className='SupTec'>
+            <button className="voltar-btn" onClick={() => navigate(-1)}>← Voltar</button> 
             <form id='sup'>
                 <h1 id='titulo'>Lista de Contatos para suporte:</h1>
-                <h1 id='nome'>- Antonio Edson:</h1>
+                <h1 id='nome'>- Antônio Edson:</h1>
                 <h1 id='num'>(81)xxxxx-xxxx</h1>
                 <h1 id='nome'>- Dacio da Silva:</h1>
                 <h1 id='num'>(81)xxxxx-xxxx</h1>
@@ -18,7 +22,7 @@ function Suporte() {
                 <h1 id='num'>(81)xxxxx-xxxx</h1>
                 <h1 id='nome'>- Matheus Aguilar:</h1>
                 <h1 id='num'>(81)xxxxx-xxxx</h1>
-                <h1 id='nome'>- Salomão Pernambuco:</h1>
+                <h1 id='nome'>- Salomão Pernambucano:</h1>
                 <h1 id='num'>(81)xxxxx-xxxx</h1>
             </form>
         </div>

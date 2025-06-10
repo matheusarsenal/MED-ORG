@@ -1,5 +1,5 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
+import React from "react";
 import './style.css';
 
 const HomeMedico = () => {
@@ -19,7 +19,7 @@ const HomeMedico = () => {
   const menuItems = [
     { label: "Lista de Consultas", icon: "📋", path: "/consultas" },
     { label: "Prescrições Atuais", icon: "💊", path: "/prescricoes" },
-    { label: "Criar Prescrição", icon: "✍️", path: "/criar-prescricao" },
+    { label: "Criar Prescrição", icon: "✍️", path: "/prescricao-medica" },
     { label: "Chat", icon: "💬", path: "/chat" },
     { label: "Mapa", icon: "📍", path: "/mapa" },
     { label: "Conta", icon: "👤", path: "/conta" },

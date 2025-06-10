@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './style.css';
 
 function Chat() {
+  const navigate = useNavigate();
+
   const [messages, setMessages] = useState([
     { from: 'system', text: 'Bom dia Robsom. Como você está se sentindo hoje?' },
     { from: 'user', text: 'Olá Dr. Henrique estou um pouco melhor' },
@@ -30,6 +33,8 @@ function Chat() {
 
   return (
     <div className="chat-container">
+      <button className="voltar-btn" onClick={() => navigate(-1)}>← Voltar</button>
+
       <div className="header">
         <span>Dr. Henrique Dias Gonçalves</span>
         <span className="hora">{time}</span>

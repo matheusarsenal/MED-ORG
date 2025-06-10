@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import "./style.css";
 import { useNavigate } from "react-router-dom";
+import "./style.css";
 
 export default function PrescricaoMedica() {
   const navigate = useNavigate();
@@ -8,12 +8,12 @@ export default function PrescricaoMedica() {
   const usuarioSalvo = JSON.parse(localStorage.getItem("usuario"));
   const tipoUsuario = usuarioSalvo?.tipo;
 
-  //useEffect(() => {
-    //if(tipoUsuario !== "medico" && tipoUsuario !== "paciente") {
-      //alert("Acesso restrito a médicos e pacientes.");
-      //navigate("/");
-    //}
-  //}, [tipoUsuario, navigate]);
+  // useEffect(() => {
+  //   if (tipoUsuario !== "medico" && tipoUsuario !== "paciente") {
+  //     alert("Acesso restrito a médicos e pacientes.");
+  //     navigate("/");
+  //   }
+  // }, [tipoUsuario, navigate]);
 
   const [form, setForm] = useState({
     medico: "",
@@ -44,7 +44,7 @@ export default function PrescricaoMedica() {
   return (
     <div className="prescricao-container">
       <div className="prescricao-header">
-        <button className="voltar-btn" onClick={() => navigate(-1)}>←</button>
+        <button className="voltar-btn" onClick={() => navigate(-1)}>← Voltar</button>
         <h2>Prescrição</h2>
       </div>
 
@@ -60,14 +60,11 @@ export default function PrescricaoMedica() {
         ))}
 
         {/* Comentado temporariamente para visualização */}
-{/* {tipoUsuario === "medico" && ( */}
-  <div className="botoes">
-    <button type="button" className="btn azul" onClick={handleSalvar}>
-      Salvar Prescrição
-    </button>
-  </div>
-{/* )} */}
-
+        {/* {tipoUsuario === "medico" && ( */}
+        <div className="botoes">
+          <button type="button" className="btn azul" onClick={handleSalvar}>Salvar Prescrição</button>
+        </div>
+        {/* )} */}
       </form>
     </div>
   );

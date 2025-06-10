@@ -1,9 +1,14 @@
+import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import './style.css'
 
 function MenuServicos() {
+    const navigate = useNavigate();
+
     return (
         <div className='Serv'>
+            <button className="voltar-btn" onClick={() => navigate(-1)}>← Voltar</button>
+            
             <form id='Tit'>
                 <h1>Serviços Oferecidos:</h1>
             </form>
