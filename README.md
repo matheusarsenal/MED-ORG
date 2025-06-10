@@ -113,7 +113,8 @@ https://app.diagrams.net/#G14zJqllpdjw_fsRbqm58ENEzjXTNz4-ke#%7B%22pageId%22%3A%
  # 💻Relatório da programação em par
 
 Programar essa interface de cadastro em parceria foi uma experiência bastante produtiva e educativa, principalmente pois foi feita com uma boa divisão de tarefas e comunicação clara. 
-Antônio: "Realizei o desenvolvimento das 4 telas de cadastro ao lado da minha dupla david , a divisão do trabalho e do que cada um deveria fazer reduziu bastante o estresse que teríamos fazendo tudo individualemente , além disso aumentou a eficiência do desenvolvimento."
+Antônio: "Realizei o desenvolvimento das 4 telas de cadastro ao lado da minha dupla david, a divisão do trabalho e do que cada um deveria fazer reduziu bastante o estresse que teríamos fazendo tudo individualemente, além disso aumentou a eficiência do desenvolvimento."
+David: "Eu e Antônio ficamos responsáveis pelas 3 telas de menu, sendo elas a do Médico, Paciente e Secretário. Com essa programação em par nos proporcionou uma programação mais consistente e comunicativa, onde realizamos ajustes na medida com que avançamos no projeto."
 
 <img src="https://github.com/user-attachments/assets/aabb1692-423b-4114-acba-470c70ea0205" width="400"/>
 
