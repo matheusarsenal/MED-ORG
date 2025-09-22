@@ -1,35 +1,58 @@
 .SupTec {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     padding-top: 80px;
+    min-height: 100vh;
+    background-color: #f0f2f5; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+form#sup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+form#sup h1#titulo {
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+form#sup h1#nome {
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+form#sup h1#num {
+    color: #000000;
+    font-size: 14px;
+}
+@media (max-width: 600px) {
     form#sup {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-        padding: 30px;
-        border-radius: 10px;
-        background-color: white;
-        max-width: 50%;
-        width: 290px;
-        margin-bottom: 20px;
-        align-items: baseline;
+        width: 90%;
+        padding: 20px;
+    }
 
-        & h1#titulo{
-            color: black;
-            gap: 15px;
-            font-size: medium;
-        } 
+    form#sup h1#titulo {
+        font-size: 20px;
+    }
 
-        & h1#nome{
-            color:black;
-            font-size: small;
-        }
+    form#sup h1#nome {
+        font-size: 16px;
+    }
 
-        & h1#num{
-            color: #000000 !important;
-            font-size: x-small;
-        }
+    form#sup h1#num {
+        font-size: 12px;
     }
 }
