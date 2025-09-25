@@ -6,7 +6,7 @@ export default function TelaEscolhaCadastro() {
   const navigate = useNavigate();
 
   const navegarPara = (tipo) => {
-    // Navegar para as rotas: /cadastro-medico, /cadastro-paciente, /cadastro-secretario, etc.
+    // Navegar para as rotas: /cadastro-medico, /cadastro-paciente, /cadastro-secretario, etcccc.
     navigate(`/cadastro-${tipo.toLowerCase()}`);
   };
 
