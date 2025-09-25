@@ -1,118 +1,116 @@
-/* Container geral */
 .home-container {
-  max-width: 400px;
-  margin: 30px auto;
-  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 40px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f7fa;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fdfdfd;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
 }
 
 .home-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   min-height: 100vh;
-  background-color: #ecf0f1; /* opcional */
+  background: linear-gradient(to bottom right, #ecf0f1, #f7f9fa);
+  padding: 30px;
 }
 
-/* Cabeçalho */
 .home-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #2c3e50;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 12px;
 }
 
 .home-header .hora {
   font-weight: 500;
-  font-size: 1.1rem;
-  color: #ffffff;
+  font-size: 1.2rem;
+  color: #7f8c8d;
 }
 
-/* Nome do usuário */
 .usuario-nome {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-weight: 600;
   color: #34495e;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   text-align: center;
 }
 
-/* Container do menu */
 .menu-container {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
 }
 
-/* Botões do menu */
 .menu-item {
-  background-color: white;
+  background-color: #ffffff;
   border: 2px solid #2980b9;
-  border-radius: 8px;
-  padding: 14px 18px;
-  font-size: 1.1rem;
+  border-radius: 14px;
+  padding: 25px;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #2980b9;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 5px rgba(41, 128, 185, 0.2);
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 12px rgba(41, 128, 185, 0.15);
 }
 
 .menu-item:hover {
   background-color: #2980b9;
-  color: white;
-  box-shadow: 0 4px 12px rgba(41, 128, 185, 0.5);
+  color: #fff;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(41, 128, 185, 0.35);
 }
 
-/* Destaque para o botão Suporte */
 .menu-item.suporte {
   border-color: #e67e22;
   color: #e67e22;
-  box-shadow: 0 2px 5px rgba(230, 126, 34, 0.3);
+  box-shadow: 0 4px 12px rgba(230, 126, 34, 0.2);
 }
 
 .menu-item.suporte:hover {
   background-color: #e67e22;
   color: white;
-  box-shadow: 0 4px 12px rgba(230, 126, 34, 0.7);
+  box-shadow: 0 10px 20px rgba(230, 126, 34, 0.45);
 }
 
-/* Ícone do menu */
 .menu-icon {
-  margin-right: 12px;
-  font-size: 1.4rem;
+  margin-right: 16px;
+  font-size: 1.7rem;
   line-height: 1;
 }
 
-/* Responsividade */
-@media (max-width: 450px) {
+@media (max-width: 768px) {
   .home-container {
-    margin: 15px;
-    padding: 15px;
+    padding: 25px;
   }
 
   .home-header {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
 
   .usuario-nome {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   .menu-item {
-    font-size: 1rem;
-    padding: 12px 15px;
+    font-size: 1.05rem;
+    padding: 18px;
   }
 
   .menu-icon {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }

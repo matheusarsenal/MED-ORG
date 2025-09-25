@@ -21,16 +21,16 @@ Criação de um site/aplicativo para a área da saúde com o objetivo de forneç
 
 # 🎯Objetivos
 
-O escopo do produto tem o intuito de automatizar diferentes objetivos para a população e para a os profissinais. Para a população o foco primario é para informação e acompanhamento do sistema para uma consulta médica, facilitando o a busca e pesquisa sobre médicos especializados nas aréas necessarias para o paciente, já o médico pode utilizar nosso aplicativo como um repositorio com suas especializações, seus horarios disponiveis, hospitais em que trabalha, e a situação atual de seus clientes.
+O escopo do produto tem o intuito de automatizar diferentes objetivos para a população e para os profissinais. Para a população o foco primário é para a informação e acompanhamento do sistema para uma consulta médica, facilitando assim a busca e pesquisa sobre médicos especializados nas aréas necessárias para o paciente, já o médico pode utilizar nosso aplicativo como um repositório com suas especializações, seus horários disponiveis, hospitais em que trabalha, e a situação atual de seus clientes.
 
 
 
 # 📱Funcionalidades
-### 🗺️ Com os objetivos de informatização e acompanhamento, a funcionalidade principal e um mapa contendo as unidades de saude e as seguites informações de cada:
+### 🗺️ Com os objetivos de informatização e acompanhamento, a funcionalidade principal é um mapa contendo as unidades de saude e as seguites informações de cada:
 
-- Localização das unidades de saude via GPS.
+- Localização das unidades de saúde via GPS.
 
-- Serviços oferecidos(areas) pelo hospital.
+- Serviços oferecidos(áreas) pelo hospital.
 
 - Número de pacientes e profissionais(médicos) registrados no local, e se eles estão presentes.
 
@@ -38,11 +38,11 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 
 ### 📔Além disso, o usuário também poderá usar as seguites funcionalidades extras:
 
-- Baixar ou tirar prescriçãoes medicas de forma online, excluindo a necessidade do papel.
+- Baixar ou tirar prescrições médicas de forma online, excluindo a necessidade do papel.
 
-- Conversar diretamente com o medico de forma remota atraves do aplicativo para acompanhamento.
+- Conversar diretamente com o médico de forma remota através do aplicativo para acompanhamento.
 
-- fazer Agendamentos de consultas com o médico especifico.
+- Fazer Agendamentos de consultas com o médico específico.
 
   
 
@@ -75,7 +75,7 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 
 ![Image](https://github.com/user-attachments/assets/586a1835-9dfd-4449-90e6-476603b6fd56)
 
-# 📱telas do aplicativo
+# 📱Telas do aplicativo
 
 <img src="https://github.com/user-attachments/assets/5b896513-9036-4aca-aa2f-8835871f29f3" width="300"/>    <img src="https://github.com/user-attachments/assets/44d5bff1-3ea7-4f4f-ac41-582cea59a6e8" width="300"/><br>
                                                                                                                                                                                                                                                                                              
@@ -83,11 +83,24 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 <img src="https://github.com/user-attachments/assets/b5020296-99bf-46ff-8b7a-23cee285ae54" width="300"/> <img src="https://github.com/user-attachments/assets/faaf1db9-2345-4fac-a839-0ce2e135726a" width="300" height=450/><br>
 
 
+<img src="https://github.com/user-attachments/assets/08718cbb-666b-4e3d-a8f9-56642e578eba" width="300"/> <img src="https://github.com/user-attachments/assets/03244278-fd6d-46df-a4f8-65cfd13fd859" width="300" height=450/><br>
+
+
+<img src="https://github.com/user-attachments/assets/6019bbca-7203-41ce-a313-4516fbaec4e7" width="300"/> <img src="https://github.com/user-attachments/assets/856ea700-ddd2-437e-ba41-528ac9e231ef" width="300" height=450/><br>
+
+
+<img src="https://github.com/user-attachments/assets/3ded6081-27de-4d14-8dd5-fe8d7fa83cbb" width="300"/> <img src="https://github.com/user-attachments/assets/d75dd618-cd03-4f6a-9bd4-43ba48cb9d45" width="300" height=450/><br>
+
+
+
+
+
+
 <div align="left">
  
 # 👨‍🦱Historias de Usuário(jira)
 
-![image](https://github.com/user-attachments/assets/def95dfb-62b1-4842-a8de-5359345fb571)
+![image](https://github.com/user-attachments/assets/72c7941b-b14c-4fe1-93b6-f57946ff41e5)
 
 <div align="left">
  
@@ -100,9 +113,23 @@ https://app.diagrams.net/#G14zJqllpdjw_fsRbqm58ENEzjXTNz4-ke#%7B%22pageId%22%3A%
  # 💻Relatório da programação em par
 
 Programar essa interface de cadastro em parceria foi uma experiência bastante produtiva e educativa, principalmente pois foi feita com uma boa divisão de tarefas e comunicação clara. 
-Antônio: "Realizei o desenvolvimento das 4 telas de cadastro ao lado da minha dupla david , a divisão do trabalho e do que cada um deveria fazer reduziu bastante o estresse que teríamos fazendo tudo individualemente , além disso aumentou a eficiência do desenvolvimento."
+
+Antônio: "Realizei o desenvolvimento das 4 telas de cadastro ao lado da minha dupla david, a divisão do trabalho e do que cada um deveria fazer reduziu bastante o estresse que teríamos fazendo tudo individualemente, além disso aumentou a eficiência do desenvolvimento."
+
+David: "Eu e Antônio ficamos responsáveis pelas 3 telas de menu, sendo elas a do Médico, Paciente e Secretário. Com essa programação em par nos proporcionou uma programação mais consistente e comunicativa, onde realizamos ajustes na medida com que avançamos no projeto."
+
+Lucas: "Durante o periodo de programação em pares, eu e Diogo fizemos 4 das telas do sistema (incluindo login e chat), nós separamos a quantidade de telas para que cada um ficasse com 2, e durante o processo de programação ajudamos um ao outro a testar e verificar o codigo de um ao outro."
+
+dacio: "junto a minha dupla matheus realizei o desenvolvimento do banco de dados e o backend com conecção php, trabalhamos em conjunto em prol de atualizar um ao outro visto a necessidade de integração destas areas. trabalhar com o mesmo se mostrou pratico e produtivo alem de eficiente."
+
+<img src="https://github.com/user-attachments/assets/aabb1692-423b-4114-acba-470c70ea0205" width="400"/>
+
+<img src="https://github.com/user-attachments/assets/daa807d4-5d35-4896-8657-c7eaa9ad3a09" width="400"/>
 
 <img src="https://github.com/user-attachments/assets/a335e874-7d97-4a34-8759-b44b681d6ece" width="400"/>
+
+
+
  
 
  <div align="left">
@@ -120,6 +147,8 @@ https://github.com/matheusarsenal/MED-ORG/issues
 # 🎥Screencast
 Sprint 1: https://drive.google.com/file/d/19PVah3Ub30tLBZjGN-6uS3thKhYEsM7w/view?usp=drivesdk
 
+Sprint 2 e 3: https://drive.google.com/file/d/1LWnR1FE0YHWz3YLgEVhik8k1FDoQkPKS/view?usp=drivesdk
+
 # 🤝Integrantes 
 
 - Matheus Fabiano Barbosa Aguiar
@@ -136,22 +165,22 @@ Sprint 1: https://drive.google.com/file/d/19PVah3Ub30tLBZjGN-6uS3thKhYEsM7w/view
 
 - Salomão Pernambucano Lima Galindo
 
-# modelo conceitual
+# Modelo Conceitual
 ![Image](https://github.com/user-attachments/assets/4216bb19-ef05-42eb-8f30-10060b4cd1da)
 
-# modelo logico
+# Modelo Lógico
 ![Image](https://github.com/user-attachments/assets/32b86eb8-9505-489a-aed9-24d43788b695)
 
 
  
-# ⚙️adicionais
+# ⚙️Adicionais
 
-## Link do protótipo:
+## Link do Protótipo:
 <div align="center">
  
 [<img src="https://github.com/user-attachments/assets/dbcced9d-86c8-4ad1-9889-3563c3b3df97" width="100" height="100">](https://ai2.appinventor.mit.edu/#4644208094806016)
 
-## Link do jira:
+## Link do Jira:
 <div align="center">
  
 [<img src="https://github.com/user-attachments/assets/e1bd292f-9d9f-41c5-bf57-12124c87dfaa" widht="100" height="100">](https://unicap-team-foo2rsaj.atlassian.net/jira/software/projects/DP/boards/1)
