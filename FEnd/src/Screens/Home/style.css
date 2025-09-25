@@ -1,18 +1,21 @@
-
 body {
-  background: #f4f6fb !important;
+  background: linear-gradient(135deg, #f8fafc, #eef2ff) !important;
   color: #111 !important;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, sans-serif;
 }
 
-
+/* Variáveis de cores */
 :root{
-  --bg:#ffffff; --text:#222222; --muted:#6b7280; --border:#d1d5db;
-  --primary:#2563eb; --primary-weak:rgba(37,99,235,.15);
+  --bg:#ffffff; 
+  --text:#1e293b; 
+  --muted:#64748b; 
+  --border:#e2e8f0;
+  --primary:#2563eb; 
+  --primary-weak:rgba(37,99,235,.15);
   --danger:#e11d48;
 }
 
-
+/* Tela de login */
 .telaLogin{
   min-height: 100dvh;
   display:flex;
@@ -21,59 +24,71 @@ body {
   justify-content:flex-start;
   padding: 64px 16px 24px;
   color: var(--text);
+  text-align:center;
 }
 
+/* Logo */
 .telaLogin .logo{
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,.08);
-  margin-bottom: 16px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.08);
+  margin-bottom: 20px;
+  transition: transform .25s ease;
+}
+.telaLogin .logo:hover{
+  transform: scale(1.03);
 }
 
-
+/* Título */
 .telaLogin h1{
   color:#0f172a;
-  font-size:28px;
+  font-size:30px;
   font-weight:800;
-  margin: 0 0 20px;
-  letter-spacing:.2px;
+  margin: 0 0 24px;
+  letter-spacing:.3px;
 }
 
-
+/* Card */
 .formCard{
   width:100%;
-  max-width: 560px;
+  max-width: 460px;
   background: var(--bg);
   border:1px solid var(--border);
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 12px 28px rgba(0,0,0,.08);
+  border-radius: 16px;
+  padding: 28px 24px;
+  box-shadow: 0 16px 32px rgba(0,0,0,.06);
+  backdrop-filter: blur(6px);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.formCard:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 20px 36px rgba(0,0,0,.08);
 }
 
-
+/* Inputs */
 .form{
   display:flex;
   flex-direction:column;
-  gap: 14px;
+  gap: 16px;
 }
-
 
 .form input{
   color: var(--text);           
   background:#fff;
   border:1px solid var(--border);
-  padding:12px 14px;
-  border-radius:8px;
-  font-size:14px;
-  line-height:1.2;
+  padding:14px 16px;
+  border-radius:10px;
+  font-size:15px;
+  line-height:1.4;
+  transition: all .2s ease;
 }
 .form input::placeholder{ color: var(--muted); }
 .form input:focus{
   outline:none;
   border-color: var(--primary);
-  box-shadow: 0 0 0 3px var(--primary-weak);
+  box-shadow: 0 0 0 4px var(--primary-weak);
 }
 
-
+/* Checkbox e textos auxiliares */
 .row{
   display:flex;
   align-items:center;
@@ -82,32 +97,37 @@ body {
   font-size:14px;
 }
 
-
+/* Botões */
 .btn{ 
-  height:44px;
+  height:46px;
   border:none;
-  border-radius:10px;
+  border-radius:12px;
   cursor:pointer;
   font-weight:700;
-  letter-spacing:.2px;
-  transition: filter .15s ease, transform .02s ease;
+  letter-spacing:.3px;
+  transition: all .15s ease;
 }
 .btn:active{ transform: translateY(1px); }
 
 .btn-primary{ background: var(--primary); color:#fff; }
-.btn-primary:hover{ filter: brightness(.96); }
+.btn-primary:hover{ filter: brightness(.95); box-shadow: 0 4px 12px rgba(37,99,235,.3); }
 
-.btn-neutral{ background:#e5e7eb; color:#111827; }
-.btn-neutral:hover{ filter: brightness(.96); }
+.btn-neutral{ background:#f1f5f9; color:#1e293b; }
+.btn-neutral:hover{ filter: brightness(.97); box-shadow: 0 3px 8px rgba(0,0,0,.05); }
 
 .btn-danger{ background: var(--danger); color:#fff; }
-.btn-danger:hover{ filter: brightness(.96); }
+.btn-danger:hover{ filter: brightness(.95); box-shadow: 0 4px 12px rgba(225,29,72,.3); }
 
+/* Ações */
+.actions{ 
+  display:flex; 
+  flex-direction:column; 
+  gap:12px; 
+  margin-top: 12px;
+}
 
-.actions{ display:flex; flex-direction:column; gap:10px; }
-
-
+/* Responsivo */
 @media (max-width:480px){
-  .formCard{ padding:16px; }
+  .formCard{ padding:18px; }
   .telaLogin h1{ font-size:24px; }
 }
