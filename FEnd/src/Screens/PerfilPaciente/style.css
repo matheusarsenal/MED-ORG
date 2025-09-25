@@ -1,1 +1,65 @@
 
+.perfil-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.perfil-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 500px;
+  width: 100%;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.perfil-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.perfil-dados div {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.perfil-acoes {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-voltar, .btn-editar, .btn-sair {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-voltar {
+  background: #e5e7eb;
+}
+
+.btn-editar {
+  background: #2563eb;
+  color: white;
+}
+
+.btn-sair {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-editar:hover { background: #1e40af; }
+.btn-sair:hover { background: #b91c1c; }
