@@ -1,33 +1,22 @@
+"use client"
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/navigation";
 import "./style.css";
 
 const PerfilMedico = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
+  const usuario = JSON.parse(localStorage.getItem("usuario"));
 
-  const usuarioSalvo = JSON.parse(localStorage.getItem("usuario"));
+  if (!usuario) return <p>Nenhum usuário encontrado.</p>;
 
-  if (!usuarioSalvo) {
-    return (
-      <div className="perfil-wrapper">
-        <div className="perfil-container">
-          <h2>Nenhum usuário encontrado</h2>
-          <button className="btn-voltar" onClick={() => navigate("/")}>
-            Voltar
-          </button>
-        </div>
-      </div>
-    );
-  }
-
-  const { nome, email, especialidade, crm, tipo } = usuarioSalvo;
+  const { nome, email, crm, especialidade, tipo } = usuario;
 
   return (
     <div className="perfil-wrapper">
       <div className="perfil-container">
         <header className="perfil-header">
-          <span>👤 Perfil do Médico</span>
-          <button className="btn-voltar" onClick={() => navigate("/home-medico")}>
+          <span>👨‍⚕️ Perfil do Médico</span>
+          <button className="btn-voltar" onClick={() => router.push("/HomeMedico")}>
             ← Voltar
           </button>
         </header>
@@ -37,15 +26,12 @@ const PerfilMedico = () => {
           <div><strong>Email:</strong> {email || "Não informado"}</div>
           <div><strong>CRM:</strong> {crm || "Não informado"}</div>
           <div><strong>Especialidade:</strong> {especialidade || "Não informada"}</div>
-          <div><strong>Tipo de Usuário:</strong> {tipo || "Não informado"}</div>
+          <div><strong>Tipo:</strong> {tipo || "Não informado"}</div>
         </div>
 
         <div className="perfil-acoes">
           <button className="btn-editar">✏️ Editar Perfil</button>
-          <button className="btn-sair" onClick={() => {
-            localStorage.removeItem("usuario");
-            navigate("/");
-          }}>
+          <button className="btn-sair" onClick={() => { localStorage.removeItem("usuario"); router.push("/"); }}>
             🚪 Sair
           </button>
         </div>
