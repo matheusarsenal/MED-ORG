@@ -1,19 +1,35 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import './style.css';
 
 function Chat() {
-  const navigate = useNavigate();
-
   const [messages, setMessages] = useState([
     { from: 'system', text: 'Bom dia Robsom. Como você está se sentindo hoje?' },
     { from: 'user', text: 'Olá Dr. Henrique estou um pouco melhor' },
-@@ -30,34 +33,36 @@
+    { from: 'user', text: 'mas ainda com algumas dores.' }
+  ]);
+
+  const [newMessage, setNewMessage] = useState('');
+  const [time, setTime] = useState(
+    new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+  );
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTime(
+        new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+      );
+    }, 30000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const handleSend = () => {
+    if (newMessage.trim() === '') return;
+    setMessages([...messages, { from: 'user', text: newMessage }]);
+    setNewMessage('');
+  };
 
   return (
     <div className="chat-container">
-      <button className="voltar-btn" onClick={() => navigate(-1)}>← Voltar</button>
-
       <div className="header">
         <span>Dr. Henrique Dias Gonçalves</span>
         <span className="hora">{time}</span>
