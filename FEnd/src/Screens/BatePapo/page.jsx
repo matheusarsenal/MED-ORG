@@ -8,28 +8,7 @@ function Chat() {
   const [messages, setMessages] = useState([
     { from: 'system', text: 'Bom dia Robsom. Como você está se sentindo hoje?' },
     { from: 'user', text: 'Olá Dr. Henrique estou um pouco melhor' },
-    { from: 'user', text: 'mas ainda com algumas dores.' }
-  ]);
-
-  const [newMessage, setNewMessage] = useState('');
-  const [time, setTime] = useState(
-    new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
-  );
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTime(
-        new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
-      );
-    }, 30000);
-    return () => clearInterval(interval);
-  }, []);
-
-  const handleSend = () => {
-    if (newMessage.trim() === '') return;
-    setMessages([...messages, { from: 'user', text: newMessage }]);
-    setNewMessage('');
-  };
+@@ -30,34 +33,36 @@
 
   return (
     <div className="chat-container">
