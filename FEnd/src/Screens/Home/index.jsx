@@ -38,7 +38,6 @@ export default function HomeScreen() {
   };
 
   const handleEntrar = () => {
-    // TODO: implemente sua autenticação aqui
   };
 
   return (
