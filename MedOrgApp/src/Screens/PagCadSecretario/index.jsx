@@ -1,17 +1,26 @@
-import React, { useState } from 'react';
-import { View, Text, TextInput, Button, StyleSheet, ScrollView } from 'react-native';
+import React, { useState } from "react";
+import {
+  View,
+  Text,
+  TextInput,
+  Button,
+  StyleSheet,
+  ScrollView,
+  Alert,
+} from "react-native";
+import { router } from "expo-router";
 
-export default function CadastroSecretario({ navigation }) {
+export default function CadastroSecretario() {
   const [formData, setFormData] = useState({
-    nome: '',
-    email: '',
-    telefone: '',
-    cpf: '',
-    sexo: '',
-    dataNascimento: '',
-    endereco: '',
-    senha: '',
-    confirmarSenha: '',
+    nome: "",
+    email: "",
+    telefone: "",
+    cpf: "",
+    sexo: "",
+    dataNascimento: "",
+    endereco: "",
+    senha: "",
+    confirmarSenha: "",
   });
 
   const handleChange = (key, value) => {
@@ -20,13 +29,13 @@ export default function CadastroSecretario({ navigation }) {
 
   const handleSubmit = () => {
     if (formData.senha !== formData.confirmarSenha) {
-      alert('As senhas não coincidem.');
+      Alert.alert("Erro", "As senhas não coincidem.");
       return;
     }
 
-    console.log('Cadastro de secretário enviado:', formData);
-    alert('Cadastro realizado com sucesso!');
-    navigation.goBack();
+    console.log("Cadastro de secretário enviado:", formData);
+    Alert.alert("Sucesso", "Cadastro realizado com sucesso!");
+    router.back();
   };
 
   return (
@@ -37,7 +46,7 @@ export default function CadastroSecretario({ navigation }) {
         style={styles.input}
         placeholder="Nome"
         value={formData.nome}
-        onChangeText={(text) => handleChange('nome', text)}
+        onChangeText={(text) => handleChange("nome", text)}
       />
 
       <TextInput
@@ -45,7 +54,7 @@ export default function CadastroSecretario({ navigation }) {
         placeholder="E-mail"
         value={formData.email}
         keyboardType="email-address"
-        onChangeText={(text) => handleChange('email', text)}
+        onChangeText={(text) => handleChange("email", text)}
       />
 
       <TextInput
@@ -53,35 +62,35 @@ export default function CadastroSecretario({ navigation }) {
         placeholder="Telefone"
         value={formData.telefone}
         keyboardType="phone-pad"
-        onChangeText={(text) => handleChange('telefone', text)}
+        onChangeText={(text) => handleChange("telefone", text)}
       />
 
       <TextInput
         style={styles.input}
         placeholder="CPF"
         value={formData.cpf}
-        onChangeText={(text) => handleChange('cpf', text)}
+        onChangeText={(text) => handleChange("cpf", text)}
       />
 
       <TextInput
         style={styles.input}
         placeholder="Sexo"
         value={formData.sexo}
-        onChangeText={(text) => handleChange('sexo', text)}
+        onChangeText={(text) => handleChange("sexo", text)}
       />
 
       <TextInput
         style={styles.input}
         placeholder="Data de Nascimento (DD/MM/AAAA)"
         value={formData.dataNascimento}
-        onChangeText={(text) => handleChange('dataNascimento', text)}
+        onChangeText={(text) => handleChange("dataNascimento", text)}
       />
 
       <TextInput
         style={styles.input}
         placeholder="Endereço"
         value={formData.endereco}
-        onChangeText={(text) => handleChange('endereco', text)}
+        onChangeText={(text) => handleChange("endereco", text)}
       />
 
       <TextInput
@@ -89,7 +98,7 @@ export default function CadastroSecretario({ navigation }) {
         placeholder="Senha"
         secureTextEntry
         value={formData.senha}
-        onChangeText={(text) => handleChange('senha', text)}
+        onChangeText={(text) => handleChange("senha", text)}
       />
 
       <TextInput
@@ -97,7 +106,7 @@ export default function CadastroSecretario({ navigation }) {
         placeholder="Confirmar Senha"
         secureTextEntry
         value={formData.confirmarSenha}
-        onChangeText={(text) => handleChange('confirmarSenha', text)}
+        onChangeText={(text) => handleChange("confirmarSenha", text)}
       />
 
       <Button title="Cadastrar" onPress={handleSubmit} />
@@ -108,19 +117,19 @@ export default function CadastroSecretario({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     padding: 20,
-    backgroundColor: '#fff',
+    backgroundColor: "#fff",
     flexGrow: 1,
   },
   title: {
     fontSize: 22,
-    fontWeight: 'bold',
-    color: '#388E3C',
+    fontWeight: "bold",
+    color: "#388E3C",
     marginBottom: 20,
-    textAlign: 'center',
+    textAlign: "center",
   },
   input: {
     borderWidth: 1,
-    borderColor: '#ccc',
+    borderColor: "#ccc",
     borderRadius: 8,
     padding: 10,
     marginBottom: 12,

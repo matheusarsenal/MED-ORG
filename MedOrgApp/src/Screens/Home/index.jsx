@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
-import {View, Text, TextInput, TouchableOpacity, Image, Switch, StyleSheet,} from 'react-native';
-import { useNavigation } from '@react-navigation/native';
-import MedLogo from '../../assets/MedOrg.png';
+import React, { useState } from "react";
+import { View, Text, TextInput, TouchableOpacity, Image, Switch, StyleSheet } from "react-native";
+import { router } from "expo-router";
+import MedLogo from "../assets/images/MedOrg.png"; // ajuste se necessário
 
 export default function HomeScreen() {
-  const navigation = useNavigation();
-  const [email, setEmail] = useState('');
-  const [senha, setSenha] = useState('');
+  const [email, setEmail] = useState("");
+  const [senha, setSenha] = useState("");
   const [manterConectado, setManterConectado] = useState(false);
 
   return (
@@ -33,7 +32,7 @@ export default function HomeScreen() {
 
       <TouchableOpacity
         style={styles.button}
-        onPress={() => navigation.navigate('Escolha')}
+        onPress={() => router.push("/escolha-cadastro")}
       >
         <Text style={styles.buttonText}>Criar Conta</Text>
       </TouchableOpacity>
@@ -41,7 +40,7 @@ export default function HomeScreen() {
       <TouchableOpacity
         style={[styles.button, styles.enterButton]}
         onPress={() => {
-          // Lógica de login aqui...
+          // Lógica de login...
         }}
       >
         <Text style={styles.buttonText}>Entrar</Text>
@@ -61,59 +60,51 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
     padding: 20,
   },
-
   logo: {
     width: 150,
     height: 150,
-    resizeMode: 'contain',
+    resizeMode: "contain",
     marginBottom: 20,
   },
-
   title: {
     fontSize: 32,
     marginBottom: 20,
-    fontWeight: 'bold',
+    fontWeight: "bold",
   },
-
   input: {
-    width: '100%',
+    width: "100%",
     borderWidth: 1,
-    borderColor: '#ccc',
+    borderColor: "#ccc",
     padding: 10,
     borderRadius: 8,
     marginBottom: 15,
   },
-
   button: {
-    backgroundColor: '#007BFF',
+    backgroundColor: "#007BFF",
     paddingVertical: 12,
     paddingHorizontal: 25,
     borderRadius: 8,
     marginBottom: 10,
-    width: '100%',
-    alignItems: 'center',
+    width: "100%",
+    alignItems: "center",
   },
-
   enterButton: {
-    backgroundColor: '#28A745',
+    backgroundColor: "#28A745",
   },
-
   buttonText: {
-    color: '#fff',
-    fontWeight: 'bold',
+    color: "#fff",
+    fontWeight: "bold",
   },
-
   switchContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     marginTop: 10,
   },
-
   switchText: {
     marginLeft: 10,
   },
