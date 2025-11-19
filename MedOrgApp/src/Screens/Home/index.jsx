@@ -1,111 +1,169 @@
 import React, { useState } from "react";
-import { View, Text, TextInput, TouchableOpacity, Image, Switch, StyleSheet } from "react-native";
+import { View, Text, TextInput, Image, StyleSheet, TouchableOpacity, Alert } from "react-native";
 import { router } from "expo-router";
-import MedLogo from "../assets/images/MedOrg.png"; // ajuste se necessário
+import { LinearGradient } from "expo-linear-gradient";
 
 export default function HomeScreen() {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const [manterConectado, setManterConectado] = useState(false);
 
+  const excluirConta = async () => {
+    Alert.alert(
+      "Excluir Conta",
+      "Tem certeza que deseja excluir sua conta? Esta ação é irreversível.",
+      [
+        { text: "Cancelar", style: "cancel" },
+        {
+          text: "Excluir",
+          style: "destructive",
+          onPress: async () => {
+            try {
+              const params = new URLSearchParams();
+              params.append("email", email);
+              params.append("senha", senha);
+
+              const res = await fetch(`${process.env.EXPO_PUBLIC_API_URL}/paciente/delete.php`, {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: params.toString(),
+              });
+
+              const data = await res.json();
+              if (data?.sucesso) {
+                Alert.alert("Sucesso", "Conta excluída com sucesso!");
+                setEmail(""); 
+                setSenha("");
+              } else {
+                Alert.alert("Erro", data?.mensagem || "Falha ao excluir.");
+              }
+            } catch {
+              Alert.alert("Erro", "Erro ao conectar com o servidor.");
+            }
+          }
+        }
+      ]
+    );
+  };
+
   return (
-    <View style={styles.container}>
-      <Image source={MedLogo} style={styles.logo} />
+    <LinearGradient colors={["#f9eaf8", "rgba(232,252,255,0.8)"]} style={styles.container}>
+      <Image
+        source={require("../assets/Med-org.jpg")}
+        style={styles.logo}
+      />
+
       <Text style={styles.title}>Login</Text>
 
-      <TextInput
-        style={styles.input}
-        placeholder="Digite seu email"
-        value={email}
-        onChangeText={setEmail}
-        keyboardType="email-address"
-        autoCapitalize="none"
-      />
-
-      <TextInput
-        style={styles.input}
-        placeholder="Digite sua senha"
-        value={senha}
-        onChangeText={setSenha}
-        secureTextEntry
-      />
-
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => router.push("/escolha-cadastro")}
-      >
-        <Text style={styles.buttonText}>Criar Conta</Text>
-      </TouchableOpacity>
-
-      <TouchableOpacity
-        style={[styles.button, styles.enterButton]}
-        onPress={() => {
-          // Lógica de login...
-        }}
-      >
-        <Text style={styles.buttonText}>Entrar</Text>
-      </TouchableOpacity>
-
-      <View style={styles.switchContainer}>
-        <Switch
-          value={manterConectado}
-          onValueChange={setManterConectado}
+      <View style={styles.card}>
+        <TextInput
+          placeholder="Digite seu email"
+          style={styles.input}
+          value={email}
+          onChangeText={setEmail}
+          autoCapitalize="none"
+          keyboardType="email-address"
         />
-        <Text style={styles.switchText}>Manter-me Conectado</Text>
+
+        <TextInput
+          placeholder="Digite sua senha"
+          style={styles.input}
+          secureTextEntry
+          value={senha}
+          onChangeText={setSenha}
+        />
+
+        <View style={styles.actions}>
+          <TouchableOpacity
+            style={[styles.btn, styles.btnNeutral]}
+            onPress={() => router.push("/TelaEscolhaCadastro")}
+          >
+            <Text style={styles.btnText}>Criar Conta</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={[styles.btn, styles.btnPrimary]}>
+            <Text style={styles.btnText}>Entrar</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={[styles.btn, styles.btnDanger]} onPress={excluirConta}>
+            <Text style={styles.btnText}>Excluir Conta</Text>
+          </TouchableOpacity>
+        </View>
       </View>
-    </View>
+    </LinearGradient>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    paddingTop: 64,
+    paddingHorizontal: 16,
     alignItems: "center",
-    justifyContent: "center",
-    padding: 20,
   },
+
   logo: {
-    width: 150,
-    height: 150,
-    resizeMode: "contain",
-    marginBottom: 20,
+    width: 200,
+    height: 200,
+    borderRadius: 12,
+    marginBottom: 16,
+    elevation: 5,
   },
+
   title: {
-    fontSize: 32,
+    fontSize: 28,
+    fontWeight: "800",
     marginBottom: 20,
-    fontWeight: "bold",
+    color: "#0f172a",
   },
-  input: {
+
+  card: {
     width: "100%",
+    maxWidth: 560,
+    backgroundColor: "#fff",
+    padding: 20,
+    borderRadius: 12,
+    elevation: 4,
     borderWidth: 1,
-    borderColor: "#ccc",
-    padding: 10,
-    borderRadius: 8,
-    marginBottom: 15,
+    borderColor: "#d1d5db",
   },
-  button: {
-    backgroundColor: "#007BFF",
-    paddingVertical: 12,
-    paddingHorizontal: 25,
+
+  input: {
+    borderWidth: 1,
+    borderColor: "#d1d5db",
+    backgroundColor: "#fff",
     borderRadius: 8,
+    padding: 12,
+    marginBottom: 14,
+  },
+
+  actions: {
+    flexDirection: "column",
+    gap: 10,
+  },
+
+  btn: {
+    height: 44,
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 10,
     marginBottom: 10,
-    width: "100%",
-    alignItems: "center",
   },
-  enterButton: {
-    backgroundColor: "#28A745",
-  },
-  buttonText: {
+
+  btnText: {
+    fontWeight: "700",
     color: "#fff",
-    fontWeight: "bold",
   },
-  switchContainer: {
-    flexDirection: "row",
-    alignItems: "center",
-    marginTop: 10,
+
+  btnPrimary: {
+    backgroundColor: "#2563eb",
   },
-  switchText: {
-    marginLeft: 10,
+
+  btnNeutral: {
+    backgroundColor: "#e5e7eb",
+  },
+
+  btnDanger: {
+    backgroundColor: "#e11d48",
   },
 });
