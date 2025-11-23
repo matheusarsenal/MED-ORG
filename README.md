@@ -165,6 +165,8 @@ Sprint 2 e 3: https://drive.google.com/file/d/1LWnR1FE0YHWz3YLgEVhik8k1FDoQkPKS/
 
 - Salomão Pernambucano Lima Galindo
 
+- Gabriel de Souza Leão Araújo
+
 # Modelo Conceitual
 ![Image](https://github.com/user-attachments/assets/4216bb19-ef05-42eb-8f30-10060b4cd1da)
 
