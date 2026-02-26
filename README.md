@@ -92,7 +92,7 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 
 # LLM utilizada 🤖
 
-<img src="https://github.com/user-attachments/assets/b5020296-99bf-46ff-8b7a-23cee285ae54" width="300"/> <img src="https://github.com/user-attachments/assets/faaf1db9-2345-4fac-a839-0ce2e135726a" width="300" height=450/><br>
+![Image](https://github.com/user-attachments/assets/35292659-6e97-41e4-80e1-e5e5cdc53688)
 
 Implementação de uma automação para envio de email para confirmação de consultas, envio de prescrições, print de todas as redes de hospitais a localização do usuario,
 ping em tempo real dos medicos que estão presentes naquela rede de hospital especifico mediante a passagem de crachá nas catracas, se um medico passar um crachá na entrada, automaticamente 
