@@ -9,8 +9,6 @@
 
 [![Image](https://github.com/user-attachments/assets/0ef3329c-bcbc-49dd-ae64-8ca9c1e53a27)](https://www.ipea.gov.br/ods/ods3.html)
 
-@smile 
-
 
 <div align= "left">
 
