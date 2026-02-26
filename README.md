@@ -90,12 +90,14 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 <img src="https://github.com/user-attachments/assets/3ded6081-27de-4d14-8dd5-fe8d7fa83cbb" width="300"/> <img src="https://github.com/user-attachments/assets/d75dd618-cd03-4f6a-9bd4-43ba48cb9d45" width="300" height=450/><br>
 
 
+# LLM utilizada 🤖
 
-# LLm utilizada
+<img src="https://github.com/user-attachments/assets/b5020296-99bf-46ff-8b7a-23cee285ae54" width="300"/> <img src="https://github.com/user-attachments/assets/faaf1db9-2345-4fac-a839-0ce2e135726a" width="300" height=450/><br>
 
-Inplementação de uma automação para envio de email para confirmação de consultas, envio de prescriçãoes, print de todas as redes de hospitais a localização do usuario,
+Implementação de uma automação para envio de email para confirmação de consultas, envio de prescrições, print de todas as redes de hospitais a localização do usuario,
 ping em tempo real dos medicos que estão presentes naquela rede de hospital especifico mediante a passagem de crachá nas catracas, se um medico passar um crachá na entrada, automaticamente 
-vai pingar que aquele medico esta ativo naquele momento
+vai pingar que aquele medico esta ativo naquele momento na unidade, e assim o inverso para quando ele sair para pingar que ele esta inativo.
+
 
 
 
