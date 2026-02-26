@@ -93,6 +93,13 @@ O escopo do produto tem o intuito de automatizar diferentes objetivos para a pop
 
 
 
+# LLm utilizada
+
+Inplementação de uma automação para envio de email para confirmação de consultas, envio de prescriçãoes, print de todas as redes de hospitais a localização do usuario,
+ping em tempo real dos medicos que estão presentes naquela rede de hospital especifico mediante a passagem de crachá nas catracas, se um medico passar um crachá na entrada, automaticamente 
+vai pingar que aquele medico esta ativo naquele momento
+
+
 
 
 
